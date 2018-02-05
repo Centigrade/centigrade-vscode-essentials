@@ -1,8 +1,7 @@
 {
   "name": "centigrade-angular-essentials",
   "displayName": "Centigrade Angular Essentials",
-  "description":
-    "Essential extensions and configurations for developing Angular applications at Centigrade.",
+  "description": "Essential extensions and configurations for developing Angular applications at Centigrade.",
   "version": "0.0.4",
   "publisher": "centigrade",
   "homepage": "https://www.centigrade.de",
@@ -15,7 +14,13 @@
     "color": "#0069B4",
     "theme": "dark"
   },
-  "keywords": ["Angular", "TypeScript", "SCSS", "UX", "Centigrade"],
+  "keywords": [
+    "Angular",
+    "TypeScript",
+    "SCSS",
+    "UX",
+    "Centigrade"
+  ],
   "license": "SEE LICENSE IN LICENSE.md",
   "engines": {
     "vscode": "^1.19.0"
