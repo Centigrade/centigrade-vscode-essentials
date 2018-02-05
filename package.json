@@ -1,0 +1,106 @@
+{
+  "name": "centigrade-angular-essentials",
+  "displayName": "Centigrade Angular Essentials",
+  "description":
+    "Essential extensions and configurations for developing Angular applications at Centigrade.",
+  "version": "0.0.3",
+  "publisher": "centigrade",
+  "homepage": "https://www.centigrade.de",
+  "icon": "assets/images/centigrade.png",
+  "galleryBanner": {
+    "color": "#0069B4",
+    "theme": "dark"
+  },
+  "keywords": ["Angular", "TypeScript", "SCSS", "UX", "Centigrade"],
+  "license": "SEE LICENSE IN LICENSE.md",
+  "engines": {
+    "vscode": "^1.19.0"
+  },
+  "categories": [
+    "Extension Packs",
+    "Formatters",
+    "Linters",
+    "Snippets",
+    "Themes"
+  ],
+  "extensionDependencies": [
+    "Angular.ng-template",
+    "christian-kohler.path-intellisense",
+    "EditorConfig.EditorConfig",
+    "eg2.tslint",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-rename-tag",
+    "GregorBiswanger.json2ts",
+    "HookyQR.beautify",
+    "mrmlnc.vscode-scss",
+    "msjsdiag.debugger-for-chrome",
+    "natewallace.angular2-inline",
+    "pflannery.vscode-versionlens",
+    "rbbit.typescript-hero",
+    "shinnn.stylelint"
+  ],
+  "main": "./out/extension",
+  "activationEvents": [
+    "onCommand:extension.addBeautifyConfig",
+    "onCommand:extension.addPrettierConfig",
+    "onCommand:extension.addVsCodeSettings",
+    "onCommand:extension.addStylelintConfig",
+    "onCommand:extension.addEditorConfig"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.addBeautifyConfig",
+        "title": "°Centigrade: Create Beautify config"
+      },
+      {
+        "command": "extension.addPrettierConfig",
+        "title": "°Centigrade: Create Prettier config"
+      },
+      {
+        "command": "extension.addVsCodeSettings",
+        "title": "°Centigrade: Create VSCode settings"
+      },
+      {
+        "command": "extension.addStylelintConfig",
+        "title": "°Centigrade: Create Stylelint config"
+      },
+      {
+        "command": "extension.addEditorConfig",
+        "title": "°Centigrade: Create EditorConfig"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "extension.addBeautifyConfig"
+        },
+        {
+          "command": "extension.addPrettierConfig"
+        },
+        {
+          "command": "extension.addVsCodeSettings"
+        },
+        {
+          "command": "extension.addStylelintConfig"
+        },
+        {
+          "command": "extension.addEditorConfig"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^7.0.43",
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.6"
+  }
+}
