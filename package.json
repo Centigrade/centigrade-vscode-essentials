@@ -3,10 +3,14 @@
   "displayName": "Centigrade Angular Essentials",
   "description":
     "Essential extensions and configurations for developing Angular applications at Centigrade.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "centigrade",
   "homepage": "https://www.centigrade.de",
   "icon": "assets/images/centigrade.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Centigrade/centigrade-angular-essentials"
+  },
   "galleryBanner": {
     "color": "#0069B4",
     "theme": "dark"
