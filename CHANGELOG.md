@@ -2,6 +2,10 @@
 
 All notable changes to the "centigrade-angular-essentials" extension pack will be documented in this file.
 
+## [0.0.5]
+
+* Reorder changelog
+
 ## [0.0.4]
 
 * Publish on GitHub and add repo link
