@@ -15,11 +15,11 @@ suite('Extension Tests', () => {
   ];
 
   test('Tools constants contain proper configuration filenames', () => {
-    assert.equal(fromTools.Beautify.configFileName, '.jsbeautifyrc');
-    assert.equal(fromTools.EditorConfig.configFileName, '.editorconfig');
-    assert.equal(fromTools.Prettier.configFileName, '.prettierrc');
-    assert.equal(fromTools.Stylelint.configFileName, '.stylelintrc');
-    assert.equal(fromTools.VsCodeSettings.configFileName, 'settings.json');
+    assert.equal(fromTools.Beautify.configFileNames, ['.jsbeautifyrc']);
+    assert.equal(fromTools.EditorConfig.configFileNames, ['.editorconfig']);
+    assert.equal(fromTools.Prettier.configFileNames, ['.prettierrc', '.prettierignore']);
+    assert.equal(fromTools.Stylelint.configFileNames, ['.stylelintrc']);
+    assert.equal(fromTools.VsCodeSettings.configFileNames, ['settings.json']);
   });
 
   test('Extension should be present', () => {

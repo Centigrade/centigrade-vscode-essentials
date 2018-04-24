@@ -34,27 +34,30 @@ function addConfiguration(configuration: Configuration, sourceUri: Uri) {
       targetPath = path.resolve(targetPath, '..');
     }
 
-    copyConfigurationFromTemplateToTargetPath(configuration, targetPath);
+    for (let configFileName of configuration.configFileNames) {
+      copyConfigurationFromTemplateToTargetPath(configuration.toolName, configFileName, targetPath);
+    }
   } catch (error) {
     window.showWarningMessage(error);
   }
 }
 
 function copyConfigurationFromTemplateToTargetPath(
-  configuration: Configuration,
+  toolName: string,
+  configFileName: string,
   targetFolderPath: string,
 ) {
-  const templateFileName = `${configuration.configFileName}.tmpl`;
+  const templateFileName = `${configFileName}.tmpl`;
   const templateFilePath = path.resolve(
     __dirname,
     '..',
     'assets',
     'templates',
-    configuration.toolName,
+    toolName,
     templateFileName,
   );
 
-  const targetFilePath = path.resolve(targetFolderPath, configuration.configFileName);
+  const targetFilePath = path.resolve(targetFolderPath, configFileName);
 
   checkWhetherFileCanBeCreated(targetFilePath)
     .then(creationAllowed => {

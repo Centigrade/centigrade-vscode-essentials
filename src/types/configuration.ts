@@ -1,3 +1,3 @@
 export class Configuration {
-  constructor(public readonly toolName: string, public readonly configFileName: string) {}
+  constructor(public readonly toolName: string, public readonly configFileNames: string[]) {}
 }
