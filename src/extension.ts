@@ -1,13 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import {
-  commands,
-  ExtensionContext,
-  MessageItem,
-  Uri,
-  window,
-  workspace,
-} from 'vscode';
+import { commands, ExtensionContext, MessageItem, Uri, window, workspace } from 'vscode';
 
 import { Configuration } from './types/configuration';
 import * as fromTools from './types/tools';
@@ -61,17 +54,12 @@ function copyConfigurationFromTemplateToTargetPath(
     templateFileName,
   );
 
-  const targetFilePath = path.resolve(
-    targetFolderPath,
-    configuration.configFileName,
-  );
+  const targetFilePath = path.resolve(targetFolderPath, configuration.configFileName);
 
   checkWhetherFileCanBeCreated(targetFilePath)
     .then(creationAllowed => {
       if (creationAllowed) {
-        fs
-          .createReadStream(templateFilePath)
-          .pipe(fs.createWriteStream(targetFilePath));
+        fs.createReadStream(templateFilePath).pipe(fs.createWriteStream(targetFilePath));
       }
     })
     .catch(error => window.showWarningMessage(error));
