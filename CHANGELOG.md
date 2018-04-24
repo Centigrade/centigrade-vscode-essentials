@@ -2,6 +2,12 @@
 
 All notable changes to the "centigrade-angular-essentials" extension pack will be documented in this file.
 
+## [0.0.6]
+
+* Change default print widths from 80 to 100 (Prettier, TSHero, VS Code ruler)
+* Add default .prettierignore to Prettier default config
+* Add GitLens to list of recommended extensions
+
 ## [0.0.5]
 
 * Reorder changelog
