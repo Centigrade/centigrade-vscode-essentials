@@ -28,7 +28,7 @@ Add to project root:
 
 * Beautify (`.jsbeautifyrc`)
 * EditorConfig (`.editorconfig`)
-* Prettier (`.prettierrc`)
+* Prettier (`.prettierrc`, `.prettierignore`)
 * StyleLint (`.stylelintrc`)
 
 Add to sub-folder `.vscode/*`:
