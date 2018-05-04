@@ -1,7 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { commands, ExtensionContext, MessageItem, Uri, window, workspace } from 'vscode';
-
+import { ExtensionContext, MessageItem, Uri, commands, window, workspace } from 'vscode';
 import { Configuration } from './types/configuration';
 import * as fromTools from './types/tools';
 
