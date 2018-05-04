@@ -18,7 +18,6 @@ The following essential VS code extensions will be installed. Each of this exten
 * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome): Debugging Angular applications with Chrome
 * [Angular2 Inline](https://marketplace.visualstudio.com/items?itemName=natewallace.angular2-inline): Syntax highlight inline Angular templates
 * [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens): Inspect and update versions in package.json
-* [TypeScript Hero](https://marketplace.visualstudio.com/items?itemName=rbbit.typescript-hero): Auto-organize TS imports
 * [Stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint): Linting (S)CSS
 
 ## Default Configurations Snippets
@@ -29,7 +28,7 @@ Add to project root:
 
 * Beautify (`.jsbeautifyrc`)
 * EditorConfig (`.editorconfig`)
-* Prettier (`.prettierrc`)
+* Prettier (`.prettierrc`, `.prettierignore`)
 * StyleLint (`.stylelintrc`)
 
 Add to sub-folder `.vscode/*`:
@@ -50,6 +49,7 @@ You can install some of the following Visual Studio Code extensions that we real
 * [Markdown TOC](https://marketplace.visualstudio.com/items?itemName=AlanWalk.markdown-toc): Table of content for Markdown
 * [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager): Switch between projects in VS Code
 * [Angular Files](https://marketplace.visualstudio.com/items?itemName=alexiv.vscode-angular2-files): Quickly scaffold Angular file templates
+* [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens): Git tooling inside of VS Code
 
 ## FAQ
 
