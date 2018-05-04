@@ -18,7 +18,6 @@ The following essential VS code extensions will be installed. Each of this exten
 * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome): Debugging Angular applications with Chrome
 * [Angular2 Inline](https://marketplace.visualstudio.com/items?itemName=natewallace.angular2-inline): Syntax highlight inline Angular templates
 * [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens): Inspect and update versions in package.json
-* [TypeScript Hero](https://marketplace.visualstudio.com/items?itemName=rbbit.typescript-hero): Auto-organize TS imports
 * [Stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint): Linting (S)CSS
 
 ## Default Configurations Snippets
