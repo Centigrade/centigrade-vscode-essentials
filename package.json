@@ -58,7 +58,8 @@
     "onCommand:extension.addKarmaConfig"
   ],
   "contributes": {
-    "commands": [{
+    "commands": [
+      {
         "command": "extension.addBeautifyConfig",
         "title": "°Centigrade: Create Beautify config"
       },
@@ -84,7 +85,8 @@
       }
     ],
     "menus": {
-      "explorer/context": [{
+      "explorer/context": [
+        {
           "command": "extension.addBeautifyConfig"
         },
         {
@@ -113,9 +115,9 @@
     "test": "npm run compile && node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
-    "@types/mocha": "^2.2.42",
-    "@types/node": "^7.0.43",
-    "typescript": "^2.8.3",
-    "vscode": "^1.1.17"
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.7.1",
+    "typescript": "^3.0.1",
+    "vscode": "^1.1.21"
   }
 }
