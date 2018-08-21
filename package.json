@@ -35,17 +35,18 @@
   "extensionDependencies": [
     "Angular.ng-template",
     "cyrilletuzi.angular-schematics",
-    "christian-kohler.path-intellisense",
-    "EditorConfig.EditorConfig",
-    "eg2.tslint",
-    "esbenp.prettier-vscode",
     "formulahendry.auto-rename-tag",
-    "GregorBiswanger.json2ts",
     "HookyQR.beautify",
-    "mrmlnc.vscode-scss",
     "msjsdiag.debugger-for-chrome",
-    "pflannery.vscode-versionlens",
-    "shinnn.stylelint"
+    "EditorConfig.EditorConfig",
+    "GregorBiswanger.json2ts",
+    "christian-kohler.path-intellisense",
+    "esbenp.prettier-vscode",
+    "robinbentley.sass-indented",
+    "mrmlnc.vscode-scss",
+    "shinnn.stylelint",
+    "eg2.tslint",
+    "pflannery.vscode-versionlens"
   ],
   "main": "./out/extension",
   "activationEvents": [
