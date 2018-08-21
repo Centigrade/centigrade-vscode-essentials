@@ -5,3 +5,4 @@ export const VsCodeSettings = new Configuration('vscode', ['settings.json']);
 export const Beautify = new Configuration('beautify', ['.jsbeautifyrc']);
 export const Stylelint = new Configuration('stylelint', ['.stylelintrc']);
 export const EditorConfig = new Configuration('editorconfig', ['.editorconfig']);
+export const KarmaConfig = new Configuration('karma', ['karma.conf.js']);

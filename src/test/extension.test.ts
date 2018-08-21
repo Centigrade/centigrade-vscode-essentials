@@ -11,6 +11,7 @@ suite('Extension Tests', () => {
     'extension.addVsCodeSettings',
     'extension.addStylelintConfig',
     'extension.addEditorConfig',
+    'extension.addKarmaConfig',
   ];
 
   test('Tools constants contain proper configuration filenames', () => {
@@ -19,6 +20,7 @@ suite('Extension Tests', () => {
     assert.deepEqual(fromTools.Prettier.configFileNames, ['.prettierrc', '.prettierignore']);
     assert.deepEqual(fromTools.Stylelint.configFileNames, ['.stylelintrc']);
     assert.deepEqual(fromTools.VsCodeSettings.configFileNames, ['settings.json']);
+    assert.deepEqual(fromTools.KarmaConfig.configFileNames, ['karma.conf.js']);
   });
 
   test('Extension should be present', () => {

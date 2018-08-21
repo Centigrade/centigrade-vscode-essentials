@@ -53,7 +53,8 @@
     "onCommand:extension.addPrettierConfig",
     "onCommand:extension.addVsCodeSettings",
     "onCommand:extension.addStylelintConfig",
-    "onCommand:extension.addEditorConfig"
+    "onCommand:extension.addEditorConfig",
+    "onCommand:extension.addKarmaConfig"
   ],
   "contributes": {
     "commands": [
@@ -76,6 +77,10 @@
       {
         "command": "extension.addEditorConfig",
         "title": "°Centigrade: Create EditorConfig"
+      },
+      {
+        "command": "extension.addKarmaConfig",
+        "title": "°Centigrade: Create improved Karma config"
       }
     ],
     "menus": {
@@ -94,6 +99,9 @@
         },
         {
           "command": "extension.addEditorConfig"
+        },
+        {
+          "command": "extension.addKarmaConfig"
         }
       ]
     }

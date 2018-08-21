@@ -6,19 +6,19 @@ This extension not only adds Visual Studio Code extensions that are essential fo
 
 The following essential VS code extensions will be installed. Each of this extensions plays a particular role in our development process.
 
-* [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template): Intellisense for Angular templates
-* [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense): Intellisense for TypeScript imports
-* [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig): Set default format configurations for any editor
-* [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint): Lint TypeScript
-* [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Auto-format TypeScript
-* [Auto-Rename-Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag): Rename closing HTML tags when opening HTML tags are renamed
-* [json2ts](https://marketplace.visualstudio.com/items?itemName=GregorBiswanger.json2ts): Paste json into TypeScript classes
-* [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify): Auto-format HTML
-* [SCSS Intellisense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss): Intellisense for (S)CSS
-* [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome): Debugging Angular applications with Chrome
-* [Angular2 Inline](https://marketplace.visualstudio.com/items?itemName=natewallace.angular2-inline): Syntax highlight inline Angular templates
-* [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens): Inspect and update versions in package.json
-* [Stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint): Linting (S)CSS
+- [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template): Intellisense for Angular templates
+- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense): Intellisense for TypeScript imports
+- [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig): Set default format configurations for any editor
+- [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint): Lint TypeScript
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Auto-format TypeScript
+- [Auto-Rename-Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag): Rename closing HTML tags when opening HTML tags are renamed
+- [json2ts](https://marketplace.visualstudio.com/items?itemName=GregorBiswanger.json2ts): Paste json into TypeScript classes
+- [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify): Auto-format HTML
+- [SCSS Intellisense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss): Intellisense for (S)CSS
+- [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome): Debugging Angular applications with Chrome
+- [Angular2 Inline](https://marketplace.visualstudio.com/items?itemName=natewallace.angular2-inline): Syntax highlight inline Angular templates
+- [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens): Inspect and update versions in package.json
+- [Stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint): Linting (S)CSS
 
 ## Default Configurations Snippets
 
@@ -26,30 +26,30 @@ This extension comes with a set of default configurations for the essential exte
 
 Add to project root:
 
-* Beautify (`.jsbeautifyrc`)
-* EditorConfig (`.editorconfig`)
-* Prettier (`.prettierrc`, `.prettierignore`)
-* StyleLint (`.stylelintrc`)
+- Beautify (`.jsbeautifyrc`)
+- EditorConfig (`.editorconfig`)
+- Prettier (`.prettierrc`, `.prettierignore`)
+- StyleLint (`.stylelintrc`)
 
 Add to sub-folder `.vscode/*`:
 
-* VS Code Settings (`settings.json`)
+- VS Code Settings (`settings.json`)
 
 ## Recommended VD Code Extensions
 
 You can install some of the following Visual Studio Code extensions that we really like and recommend. These are not essential but could be helpful:
 
-* [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme): Nice icon set for VS Code (doesn't force VS code restart, in contrast to vs-code-icons)
-* [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme): Nice theme with a lot configurations
-* [Rainbow Brackets](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets): Highlight corresponding brackets in the same color
-* [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight): Highlight TODO and FIXME comments
-* [GitLab-CI templates generator](https://marketplace.visualstudio.com/items?itemName=jgsqware.gitlab-ci-templates): Templates and syntax highlighting for gitlab configuration files
-* [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker): Docker syntax highlighting
-* [Goto last edit location](https://marketplace.visualstudio.com/items?itemName=krizzdewizz.goto-last-edit-location): Go to the last edit location (even across files)
-* [Markdown TOC](https://marketplace.visualstudio.com/items?itemName=AlanWalk.markdown-toc): Table of content for Markdown
-* [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager): Switch between projects in VS Code
-* [Angular Files](https://marketplace.visualstudio.com/items?itemName=alexiv.vscode-angular2-files): Quickly scaffold Angular file templates
-* [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens): Git tooling inside of VS Code
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme): Nice icon set for VS Code (doesn't force VS code restart, in contrast to vs-code-icons)
+- [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme): Nice theme with a lot configurations
+- [Rainbow Brackets](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets): Highlight corresponding brackets in the same color
+- [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight): Highlight TODO and FIXME comments
+- [GitLab-CI templates generator](https://marketplace.visualstudio.com/items?itemName=jgsqware.gitlab-ci-templates): Templates and syntax highlighting for gitlab configuration files
+- [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker): Docker syntax highlighting
+- [Goto last edit location](https://marketplace.visualstudio.com/items?itemName=krizzdewizz.goto-last-edit-location): Go to the last edit location (even across files)
+- [Markdown TOC](https://marketplace.visualstudio.com/items?itemName=AlanWalk.markdown-toc): Table of content for Markdown
+- [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager): Switch between projects in VS Code
+- [Angular Files](https://marketplace.visualstudio.com/items?itemName=alexiv.vscode-angular2-files): Quickly scaffold Angular file templates
+- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens): Git tooling inside of VS Code
 
 ## FAQ
 
@@ -58,3 +58,9 @@ You can install some of the following Visual Studio Code extensions that we real
 **Q**: After using StyleLint with default config the following error _stylelint: Could not find "stylelint-config-standard". Do you need a `configBasedir`_ appears. What can I do?
 
 **A**: Run `npm install --save-dev stylelint-config-standard` which installs standard configuration for StyleLint where our StyleLint config is based on.
+
+### Update Karma dependencies
+
+**Q**: Using the given `karma.conf.js` does report an error.
+
+**A**: You have to update the current Karma dependencies by running `npm install --save-dev karma-spec-reporter` and `npm uninstall --save-dev karma-junit-reporter`
