@@ -5,6 +5,7 @@ All notable changes to the "centigrade-angular-essentials" extension pack will b
 ## [0.0.7]
 
 - Add improved karma.conf.js for better Angular Testing
+- Only format HTML with Beautify as formatting SCSS conflicts with lint rules or breaks some selectors
 
 ## [0.0.6]
 
