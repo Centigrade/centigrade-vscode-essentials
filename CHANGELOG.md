@@ -4,10 +4,11 @@ All notable changes to the "centigrade-angular-essentials" extension pack will b
 
 ## [0.0.7]
 
-- Add improved karma.conf.js for better Angular Testing
-- Only format HTML with Beautify as formatting SCSS conflicts with lint rules or breaks some selectors
-- Add Angular Schematics extension to use the CLI from VS code files explorer
-- Remove Angular Inline Extension as we would not recommend working with inline templates
+- Add improved karma.conf.js for better Angular testing
+- Only format HTML with _Beautify_ as formatting SCSS conflicts with lint rules or breaks some selectors
+- Add _Angular Schematics_ extension to use the CLI from VS code files explorer
+- Remove _Angular Inline_ Extension as we would not recommend working with inline templates
+- Swap _Rainbow Brackets_ with _Bracket Pair Colorizer_ as recommended extension
 
 ## [0.0.6]
 
