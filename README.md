@@ -47,6 +47,7 @@ You can install some of the following Visual Studio Code extensions that we real
 - [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker): Docker syntax highlighting
 - [Goto last edit location](https://marketplace.visualstudio.com/items?itemName=krizzdewizz.goto-last-edit-location): Go to the last edit location (even across files)
 - [Markdown TOC](https://marketplace.visualstudio.com/items?itemName=AlanWalk.markdown-toc): Table of content for Markdown
+- [Mardown Paste](https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image): Handy tool to quickly insert screencaptures into markdown
 - [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager): Switch between projects in VS Code
 - [Angular Files](https://marketplace.visualstudio.com/items?itemName=alexiv.vscode-angular2-files): Quickly scaffold Angular file templates
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens): Git tooling inside of VS Code
