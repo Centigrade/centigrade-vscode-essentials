@@ -16,6 +16,7 @@ All notable changes to the "centigrade-angular-essentials" extension pack will b
 - Add _Angular Snippets_ as recommended extension
 - Reorder extensions lists in Readme alphabetically
 - Add bundled extension for improved _Sass_ syntax highlighting
+- Add MIT license info
 
 ## [0.0.6]
 
