@@ -7,6 +7,7 @@ All notable changes to the "centigrade-angular-essentials" extension pack will b
 - Add improved karma.conf.js for better Angular Testing
 - Only format HTML with Beautify as formatting SCSS conflicts with lint rules or breaks some selectors
 - Add Angular Schematics extension to use the CLI from VS code files explorer
+- Remove Angular Inline Extension as we would not recommend working with inline templates
 
 ## [0.0.6]
 
