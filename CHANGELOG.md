@@ -9,6 +9,7 @@ All notable changes to the "centigrade-angular-essentials" extension pack will b
 - Add _Angular Schematics_ extension to use the CLI from VS code files explorer
 - Remove _Angular Inline_ Extension as we would not recommend working with inline templates
 - Swap _Rainbow Brackets_ with _Bracket Pair Colorizer_ as recommended extension
+- Add _Night Owl_ theme as recommended extension
 
 ## [0.0.6]
 
