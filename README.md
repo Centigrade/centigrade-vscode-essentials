@@ -52,7 +52,7 @@ You can install some of the following Visual Studio Code extensions that we real
 - [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager): Switch between projects in VS Code
 - [Angular Files](https://marketplace.visualstudio.com/items?itemName=alexiv.vscode-angular2-files): Quickly scaffold Angular file templates
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens): Git tooling inside of VS Code
-- [NgRx Snippets](https://marketplace.visualstudio.com/items?itemName=ahsanayaz.vscode-ngrx-snippets): NgRx snippets to reduce boiler plate writing
+- [ngrx for Angular 2 Snippets](https://marketplace.visualstudio.com/items?itemName=ahsanayaz.vscode-ngrx-snippets): NgRx snippets to reduce boiler plate writing
 
 ## FAQ
 
