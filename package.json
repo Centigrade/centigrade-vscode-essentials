@@ -34,6 +34,7 @@
   ],
   "extensionDependencies": [
     "Angular.ng-template",
+    "cyrilletuzi.angular-schematics",
     "christian-kohler.path-intellisense",
     "EditorConfig.EditorConfig",
     "eg2.tslint",

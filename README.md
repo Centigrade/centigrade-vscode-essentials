@@ -7,6 +7,7 @@ This extension not only adds Visual Studio Code extensions that are essential fo
 The following essential VS code extensions will be installed. Each of this extensions plays a particular role in our development process.
 
 - [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template): Intellisense for Angular templates
+- [Angular Schematics](https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics): Angular CLI Schematics integrated into files explorer.
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense): Intellisense for TypeScript imports
 - [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig): Set default format configurations for any editor
 - [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint): Lint TypeScript
