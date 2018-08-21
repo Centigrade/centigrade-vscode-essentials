@@ -2,7 +2,7 @@
   "name": "centigrade-angular-essentials",
   "displayName": "Centigrade Angular Essentials",
   "description": "Essential extensions and configurations for developing Angular applications at Centigrade.",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "centigrade",
   "homepage": "https://www.centigrade.de",
   "icon": "assets/images/centigrade.png",
@@ -57,8 +57,7 @@
     "onCommand:extension.addKarmaConfig"
   ],
   "contributes": {
-    "commands": [
-      {
+    "commands": [{
         "command": "extension.addBeautifyConfig",
         "title": "°Centigrade: Create Beautify config"
       },
@@ -84,8 +83,7 @@
       }
     ],
     "menus": {
-      "explorer/context": [
-        {
+      "explorer/context": [{
           "command": "extension.addBeautifyConfig"
         },
         {
