@@ -59,7 +59,7 @@ You can install some of the following Visual Studio Code extensions that we real
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens): Git tooling inside of VS Code
 - [ngrx for Angular 2 Snippets](https://marketplace.visualstudio.com/items?itemName=ahsanayaz.vscode-ngrx-snippets): NgRx snippets to reduce boiler plate writing
 - [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare): Live share feature for collaborative code editing.
-- [Angular v6 Snippets](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2): Generic Angular snippets for typical coding patterns.
+- [Angular Snippets](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2): Generic Angular snippets for typical coding patterns.
 
 ## FAQ
 
