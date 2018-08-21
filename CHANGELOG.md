@@ -12,6 +12,7 @@ All notable changes to the "centigrade-angular-essentials" extension pack will b
 - Add _ngrx for Angular 2_ snippets extension as recommended one
 - Add _Night Owl_ theme as recommended extension
 - Add _VS Live Share_ as recommended extension
+- Remove _Angular Files_ as recommended extension in favor for _Angular Schematics_
 
 ## [0.0.6]
 
