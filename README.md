@@ -30,10 +30,16 @@ Add to project root:
 - EditorConfig (`.editorconfig`)
 - Prettier (`.prettierrc`, `.prettierignore`)
 - StyleLint (`.stylelintrc`)
+- Karma (`karma.conf.js`)
 
 Add to sub-folder `.vscode/*`:
 
 - VS Code Settings (`settings.json`)
+
+Install the following dev dependencies:
+
+- `npm install --save-dev stylelint-config-standard`
+- `npm install --save-dev karma-spec-reporter`
 
 ## Recommended VD Code Extensions
 
