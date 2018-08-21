@@ -61,6 +61,7 @@ You can install some of the following Visual Studio Code extensions that we real
 - [ngrx for Angular 2 Snippets](https://marketplace.visualstudio.com/items?itemName=ahsanayaz.vscode-ngrx-snippets): NgRx snippets to reduce boiler plate writing
 - [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare): Live share feature for collaborative code editing.
 - [Angular Snippets](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2): Generic Angular snippets for typical coding patterns.
+- [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode): Handy tool to create code snippet shots for presentation purposes.
 
 ## FAQ
 
