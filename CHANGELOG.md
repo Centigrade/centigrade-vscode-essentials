@@ -14,6 +14,8 @@ All notable changes to the "centigrade-angular-essentials" extension pack will b
 - Add _VS Live Share_ as recommended extension
 - Remove _Angular Files_ as recommended extension in favor for _Angular Schematics_
 - Add _Angular Snippets_ as recommended extension
+- Reorder extensions lists in Readme alphabetically
+- Add bundled extension for improved _Sass_ syntax highlighting
 
 ## [0.0.6]
 
