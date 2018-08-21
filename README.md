@@ -8,17 +8,17 @@ The following essential VS code extensions will be installed. Each of this exten
 
 - [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template): Intellisense for Angular templates
 - [Angular Schematics](https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics): Angular CLI Schematics integrated into files explorer.
-- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense): Intellisense for TypeScript imports
-- [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig): Set default format configurations for any editor
-- [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint): Lint TypeScript
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Auto-format TypeScript
 - [Auto-Rename-Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag): Rename closing HTML tags when opening HTML tags are renamed
-- [json2ts](https://marketplace.visualstudio.com/items?itemName=GregorBiswanger.json2ts): Paste json into TypeScript classes
 - [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify): Auto-format HTML
-- [SCSS Intellisense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss): Intellisense for (S)CSS
 - [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome): Debugging Angular applications with Chrome
-- [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens): Inspect and update versions in package.json
+- [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig): Set default format configurations for any editor
+- [json2ts](https://marketplace.visualstudio.com/items?itemName=GregorBiswanger.json2ts): Paste json into TypeScript classes
+- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense): Intellisense for TypeScript imports
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Auto-format TypeScript
+- [SCSS Intellisense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss): Intellisense for (S)CSS
 - [Stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint): Linting (S)CSS
+- [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint): Lint TypeScript
+- [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens): Inspect and update versions in package.json
 
 ## Default Configurations Snippets
 
