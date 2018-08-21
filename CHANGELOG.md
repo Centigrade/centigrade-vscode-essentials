@@ -11,6 +11,7 @@ All notable changes to the "centigrade-angular-essentials" extension pack will b
 - Swap _Rainbow Brackets_ with _Bracket Pair Colorizer_ as recommended extension
 - Add _ngrx for Angular 2_ snippets extension as recommended one
 - Add _Night Owl_ theme as recommended extension
+- Add _VS Live Share_ as recommended extension
 
 ## [0.0.6]
 
