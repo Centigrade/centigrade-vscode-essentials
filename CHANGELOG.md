@@ -4,20 +4,25 @@ All notable changes to the "centigrade-angular-essentials" extension pack will b
 
 ## [0.0.7]
 
-- Add improved karma.conf.js for better Angular testing
-- Only format HTML with _Beautify_ as formatting SCSS conflicts with lint rules or breaks some selectors
-- Add _Angular Schematics_ extension to use the CLI from VS code files explorer
-- Remove _Angular Inline_ Extension as we would not recommend working with inline templates
-- Swap _Rainbow Brackets_ with _Bracket Pair Colorizer_ as recommended extension
-- Add _ngrx for Angular 2_ snippets extension as recommended one
-- Add _Night Owl_ theme as recommended extension
-- Add _VS Live Share_ as recommended extension
-- Remove _Angular Files_ as recommended extension in favor for _Angular Schematics_
-- Add _Angular Snippets_ as recommended extension
-- Reorder extensions lists in Readme alphabetically
-- Add bundled extension for improved _Sass_ syntax highlighting
+### Added
+
+- Add improved karma.conf.js for better Angular testing [#6]
+- _Angular Schematics_ extension to use the CLI from VS code files explorer
+- Extension for improved _Sass_ syntax highlighting
+- _Night Owl_ theme, _VS Live Share_, _ngrx for Angular 2_, and _Angular Snippets_ as recommended extension
 - Add MIT license info
-- Update dependencies
+
+### Changed
+
+- Only format HTML with _Beautify_ as formatting SCSS conflicts with lint rules or breaks some selectors
+- Remove _Angular Inline_ Extension as we would not recommend working with inline templates
+- Remove _Angular Files_ as recommended extension in favor for _Angular Schematics_
+- Swap _Rainbow Brackets_ with _Bracket Pair Colorizer_ as recommended extension
+- Reorder extensions lists in README alphabetically
+
+### Fixed
+
+- Update npm dependencies (fix GitHub issued vulnerabilities)
 
 ## [0.0.6]
 
@@ -50,3 +55,5 @@ All notable changes to the "centigrade-angular-essentials" extension pack will b
 ## [0.0.1]
 
 - Initial release
+
+[#6]: https://github.com/Centigrade/centigrade-angular-essentials/issues/6
