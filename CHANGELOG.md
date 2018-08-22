@@ -10,7 +10,7 @@ All notable changes to the "centigrade-angular-essentials" extension pack will b
 - _Angular Schematics_ extension to use the CLI from VS code files explorer
 - Extension for improved _Sass_ syntax highlighting
 - _Night Owl_ theme, _VS Live Share_, _ngrx for Angular 2_, and _Angular Snippets_ as recommended extension
-- Add MIT license info
+- MIT license info
 
 ### Changed
 
