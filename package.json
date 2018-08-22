@@ -2,7 +2,7 @@
   "name": "centigrade-angular-essentials",
   "displayName": "Centigrade Angular Essentials",
   "description": "Essential extensions and configurations for developing Angular applications at Centigrade.",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "centigrade",
   "homepage": "https://www.centigrade.de",
   "icon": "assets/images/centigrade.png",
@@ -34,18 +34,19 @@
   ],
   "extensionDependencies": [
     "Angular.ng-template",
-    "christian-kohler.path-intellisense",
-    "EditorConfig.EditorConfig",
-    "eg2.tslint",
-    "esbenp.prettier-vscode",
+    "cyrilletuzi.angular-schematics",
     "formulahendry.auto-rename-tag",
-    "GregorBiswanger.json2ts",
     "HookyQR.beautify",
-    "mrmlnc.vscode-scss",
     "msjsdiag.debugger-for-chrome",
-    "natewallace.angular2-inline",
-    "pflannery.vscode-versionlens",
-    "shinnn.stylelint"
+    "EditorConfig.EditorConfig",
+    "GregorBiswanger.json2ts",
+    "christian-kohler.path-intellisense",
+    "esbenp.prettier-vscode",
+    "robinbentley.sass-indented",
+    "mrmlnc.vscode-scss",
+    "shinnn.stylelint",
+    "eg2.tslint",
+    "pflannery.vscode-versionlens"
   ],
   "main": "./out/extension",
   "activationEvents": [
@@ -53,11 +54,11 @@
     "onCommand:extension.addPrettierConfig",
     "onCommand:extension.addVsCodeSettings",
     "onCommand:extension.addStylelintConfig",
-    "onCommand:extension.addEditorConfig"
+    "onCommand:extension.addEditorConfig",
+    "onCommand:extension.addKarmaConfig"
   ],
   "contributes": {
-    "commands": [
-      {
+    "commands": [{
         "command": "extension.addBeautifyConfig",
         "title": "°Centigrade: Create Beautify config"
       },
@@ -76,11 +77,14 @@
       {
         "command": "extension.addEditorConfig",
         "title": "°Centigrade: Create EditorConfig"
+      },
+      {
+        "command": "extension.addKarmaConfig",
+        "title": "°Centigrade: Create improved Karma config"
       }
     ],
     "menus": {
-      "explorer/context": [
-        {
+      "explorer/context": [{
           "command": "extension.addBeautifyConfig"
         },
         {
@@ -94,6 +98,9 @@
         },
         {
           "command": "extension.addEditorConfig"
+        },
+        {
+          "command": "extension.addKarmaConfig"
         }
       ]
     }
@@ -103,12 +110,13 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    "test": "npm run compile && node ./node_modules/vscode/bin/test",
+    "build": "vsce package"
   },
   "devDependencies": {
-    "@types/mocha": "^2.2.42",
-    "@types/node": "^7.0.43",
-    "typescript": "^2.8.3",
-    "vscode": "^1.1.17"
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.7.1",
+    "typescript": "^3.0.1",
+    "vscode": "^1.1.21"
   }
 }

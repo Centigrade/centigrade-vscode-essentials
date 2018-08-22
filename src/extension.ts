@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { ExtensionContext, MessageItem, Uri, commands, window, workspace } from 'vscode';
+import { commands, ExtensionContext, MessageItem, Uri, window, workspace } from 'vscode';
 import { Configuration } from './types/configuration';
 import * as fromTools from './types/tools';
 
@@ -108,6 +108,9 @@ export function activate(context: ExtensionContext) {
     ),
     commands.registerCommand('extension.addEditorConfig', targetUri =>
       addConfiguration(fromTools.EditorConfig, targetUri),
+    ),
+    commands.registerCommand('extension.addKarmaConfig', targetUri =>
+      addConfiguration(fromTools.KarmaConfig, targetUri),
     ),
   ];
 
