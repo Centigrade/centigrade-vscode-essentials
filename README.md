@@ -42,7 +42,7 @@ Install the following dev dependencies:
 - `npm install --save-dev stylelint-config-standard`
 - `npm install --save-dev karma-spec-reporter`
 
-## Recommended VD Code Extensions
+## Recommended VS Code Extensions
 
 You can install some of the following Visual Studio Code extensions that we really like and recommend. These are not essential but could be helpful:
 
