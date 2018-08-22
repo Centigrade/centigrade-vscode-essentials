@@ -6,7 +6,7 @@ All notable changes to the "centigrade-angular-essentials" extension pack will b
 
 ### Added
 
-- Add improved karma.conf.js for better Angular testing [#6]
+- Improved karma.conf.js for better Angular testing ([#6])
 - _Angular Schematics_ extension to use the CLI from VS code files explorer
 - Extension for improved _Sass_ syntax highlighting
 - _Night Owl_ theme, _VS Live Share_, _ngrx for Angular 2_, and _Angular Snippets_ as recommended extension
