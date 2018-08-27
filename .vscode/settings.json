@@ -1,11 +1,6 @@
 {
   "editor.formatOnSave": true,
   "files.exclude": {
-    "dist": true,
-    "out": true,
-    "pack": true,
-    "node_modules": true,
-    "coverage": true,
     ".vscode-test": true
   },
   "editor.codeActionsOnSave": {

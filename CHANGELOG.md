@@ -19,6 +19,7 @@ All notable changes to the "centigrade-angular-essentials" extension pack will b
 - Remove _Angular Files_ as recommended extension in favor for _Angular Schematics_
 - Swap _Rainbow Brackets_ with _Bracket Pair Colorizer_ as recommended extension
 - Reorder extensions lists in README alphabetically
+- Remove excludes from VS Code settings as these are rather user settings
 
 ### Fixed
 
