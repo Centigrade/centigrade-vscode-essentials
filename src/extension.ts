@@ -1,14 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import {
-  commands,
-  ExtensionContext,
-  MessageItem,
-  Uri,
-  window,
-  workspace,
-} from 'vscode';
-
+import { commands, ExtensionContext, MessageItem, Uri, window, workspace } from 'vscode';
 import { Configuration } from './types/configuration';
 import * as fromTools from './types/tools';
 
@@ -41,37 +33,35 @@ function addConfiguration(configuration: Configuration, sourceUri: Uri) {
       targetPath = path.resolve(targetPath, '..');
     }
 
-    copyConfigurationFromTemplateToTargetPath(configuration, targetPath);
+    for (let configFileName of configuration.configFileNames) {
+      copyConfigurationFromTemplateToTargetPath(configuration.toolName, configFileName, targetPath);
+    }
   } catch (error) {
     window.showWarningMessage(error);
   }
 }
 
 function copyConfigurationFromTemplateToTargetPath(
-  configuration: Configuration,
+  toolName: string,
+  configFileName: string,
   targetFolderPath: string,
 ) {
-  const templateFileName = `${configuration.configFileName}.tmpl`;
+  const templateFileName = `${configFileName}.tmpl`;
   const templateFilePath = path.resolve(
     __dirname,
     '..',
     'assets',
     'templates',
-    configuration.toolName,
+    toolName,
     templateFileName,
   );
 
-  const targetFilePath = path.resolve(
-    targetFolderPath,
-    configuration.configFileName,
-  );
+  const targetFilePath = path.resolve(targetFolderPath, configFileName);
 
   checkWhetherFileCanBeCreated(targetFilePath)
     .then(creationAllowed => {
       if (creationAllowed) {
-        fs
-          .createReadStream(templateFilePath)
-          .pipe(fs.createWriteStream(targetFilePath));
+        fs.createReadStream(templateFilePath).pipe(fs.createWriteStream(targetFilePath));
       }
     })
     .catch(error => window.showWarningMessage(error));
@@ -118,6 +108,9 @@ export function activate(context: ExtensionContext) {
     ),
     commands.registerCommand('extension.addEditorConfig', targetUri =>
       addConfiguration(fromTools.EditorConfig, targetUri),
+    ),
+    commands.registerCommand('extension.addKarmaConfig', targetUri =>
+      addConfiguration(fromTools.KarmaConfig, targetUri),
     ),
   ];
 

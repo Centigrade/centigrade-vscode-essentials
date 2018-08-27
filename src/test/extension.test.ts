@@ -1,6 +1,5 @@
 import * as assert from 'assert';
 import * as vscode from 'vscode';
-
 import * as fromTools from '../types/tools';
 
 suite('Extension Tests', () => {
@@ -12,14 +11,16 @@ suite('Extension Tests', () => {
     'extension.addVsCodeSettings',
     'extension.addStylelintConfig',
     'extension.addEditorConfig',
+    'extension.addKarmaConfig',
   ];
 
   test('Tools constants contain proper configuration filenames', () => {
-    assert.equal(fromTools.Beautify.configFileName, '.jsbeautifyrc');
-    assert.equal(fromTools.EditorConfig.configFileName, '.editorconfig');
-    assert.equal(fromTools.Prettier.configFileName, '.prettierrc');
-    assert.equal(fromTools.Stylelint.configFileName, '.stylelintrc');
-    assert.equal(fromTools.VsCodeSettings.configFileName, 'settings.json');
+    assert.deepEqual(fromTools.Beautify.configFileNames, ['.jsbeautifyrc']);
+    assert.deepEqual(fromTools.EditorConfig.configFileNames, ['.editorconfig']);
+    assert.deepEqual(fromTools.Prettier.configFileNames, ['.prettierrc', '.prettierignore']);
+    assert.deepEqual(fromTools.Stylelint.configFileNames, ['.stylelintrc']);
+    assert.deepEqual(fromTools.VsCodeSettings.configFileNames, ['settings.json']);
+    assert.deepEqual(fromTools.KarmaConfig.configFileNames, ['karma.conf.js']);
   });
 
   test('Extension should be present', () => {
