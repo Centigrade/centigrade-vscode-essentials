@@ -36,7 +36,6 @@
     "Angular.ng-template",
     "cyrilletuzi.angular-schematics",
     "formulahendry.auto-rename-tag",
-    "HookyQR.beautify",
     "msjsdiag.debugger-for-chrome",
     "EditorConfig.EditorConfig",
     "GregorBiswanger.json2ts",
@@ -50,7 +49,6 @@
   ],
   "main": "./out/extension",
   "activationEvents": [
-    "onCommand:extension.addBeautifyConfig",
     "onCommand:extension.addPrettierConfig",
     "onCommand:extension.addVsCodeSettings",
     "onCommand:extension.addStylelintConfig",
@@ -58,10 +56,7 @@
     "onCommand:extension.addKarmaConfig"
   ],
   "contributes": {
-    "commands": [{
-        "command": "extension.addBeautifyConfig",
-        "title": "°Centigrade: Create Beautify config"
-      },
+    "commands": [
       {
         "command": "extension.addPrettierConfig",
         "title": "°Centigrade: Create Prettier config (.prettierrc, .prettierignore)"
@@ -84,7 +79,8 @@
       }
     ],
     "menus": {
-      "explorer/context": [{
+      "explorer/context": [
+        {
           "command": "extension.addBeautifyConfig"
         },
         {

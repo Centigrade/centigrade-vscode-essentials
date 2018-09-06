@@ -9,7 +9,6 @@ The following essential VS code extensions will be installed. Each of this exten
 - [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template): Intellisense for Angular templates
 - [Angular Schematics](https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics): Angular CLI Schematics integrated into files explorer.
 - [Auto-Rename-Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag): Rename closing HTML tags when opening HTML tags are renamed
-- [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify): Auto-format HTML
 - [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome): Debugging Angular applications with Chrome
 - [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig): Set default format configurations for any editor
 - [json2ts](https://marketplace.visualstudio.com/items?itemName=GregorBiswanger.json2ts): Paste json into TypeScript classes
@@ -27,7 +26,6 @@ This extension comes with a set of default configurations for the essential exte
 
 Add to project root:
 
-- Beautify (`.jsbeautifyrc`)
 - EditorConfig (`.editorconfig`)
 - Prettier (`.prettierrc`, `.prettierignore`)
 - StyleLint (`.stylelintrc`)

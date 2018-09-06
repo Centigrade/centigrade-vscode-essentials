@@ -2,6 +2,13 @@
 
 All notable changes to the "centigrade-angular-essentials" extension pack will be documented in this file.
 
+## [0.0.8]
+
+### Changed
+
+- Removed _Beautify_ extension because HTMl formatting can be handled by VS Code settings now
+- Adjust VS Code settings to wrap HTML attributes (as prior)
+
 ## [0.0.7]
 
 ### Added
