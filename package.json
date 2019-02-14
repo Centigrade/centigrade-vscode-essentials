@@ -56,8 +56,7 @@
     "onCommand:extension.addKarmaConfig"
   ],
   "contributes": {
-    "commands": [
-      {
+    "commands": [{
         "command": "extension.addPrettierConfig",
         "title": "°Centigrade: Create Prettier config (.prettierrc, .prettierignore)"
       },
@@ -79,8 +78,7 @@
       }
     ],
     "menus": {
-      "explorer/context": [
-        {
+      "explorer/context": [{
           "command": "extension.addBeautifyConfig"
         },
         {
@@ -110,9 +108,9 @@
     "build": "vsce package"
   },
   "devDependencies": {
-    "@types/mocha": "^5.2.5",
-    "@types/node": "^10.7.1",
-    "typescript": "^3.0.1",
-    "vscode": "^1.1.21"
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^10.12.26",
+    "typescript": "^3.3.3",
+    "vscode": "^1.1.29"
   }
 }
