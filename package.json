@@ -56,8 +56,7 @@
     "onCommand:extension.addKarmaConfig"
   ],
   "contributes": {
-    "commands": [
-      {
+    "commands": [{
         "command": "extension.addPrettierConfig",
         "title": "°Centigrade: Create Prettier config (.prettierrc, .prettierignore)"
       },
@@ -79,11 +78,7 @@
       }
     ],
     "menus": {
-      "explorer/context": [
-        {
-          "command": "extension.addBeautifyConfig"
-        },
-        {
+      "explorer/context": [{
           "command": "extension.addPrettierConfig"
         },
         {
