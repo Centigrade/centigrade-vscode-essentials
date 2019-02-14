@@ -8,6 +8,7 @@ suite('Extension Tests', () => {
   const ExtensionCommandNames = [
     'extension.addPrettierConfig',
     'extension.addVsCodeSettings',
+    'extension.addVsCodeExtensionRecommendations',
     'extension.addStylelintConfig',
     'extension.addEditorConfig',
     'extension.addKarmaConfig',
@@ -18,6 +19,7 @@ suite('Extension Tests', () => {
     assert.deepEqual(fromTools.Prettier.configFileNames, ['.prettierrc', '.prettierignore']);
     assert.deepEqual(fromTools.Stylelint.configFileNames, ['.stylelintrc']);
     assert.deepEqual(fromTools.VsCodeSettings.configFileNames, ['settings.json']);
+    assert.deepEqual(fromTools.VsCodeExtensionRecommendations.configFileNames, ['extensions.json']);
     assert.deepEqual(fromTools.KarmaConfig.configFileNames, ['karma.conf.js']);
   });
 

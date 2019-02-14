@@ -100,6 +100,9 @@ export function activate(context: ExtensionContext) {
     commands.registerCommand('extension.addVsCodeSettings', targetUri =>
       addConfiguration(fromTools.VsCodeSettings, targetUri),
     ),
+    commands.registerCommand('extension.addVsCodeExtensionRecommendations', targetUri =>
+      addConfiguration(fromTools.VsCodeExtensionRecommendations, targetUri),
+    ),
     commands.registerCommand('extension.addStylelintConfig', targetUri =>
       addConfiguration(fromTools.Stylelint, targetUri),
     ),

@@ -2,7 +2,7 @@
   "name": "centigrade-angular-essentials",
   "displayName": "Centigrade Angular Essentials",
   "description": "Essential extensions and configurations for developing Angular applications at Centigrade.",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "publisher": "centigrade",
   "homepage": "https://www.centigrade.de",
   "icon": "assets/images/centigrade.png",
@@ -52,6 +52,7 @@
   "activationEvents": [
     "onCommand:extension.addPrettierConfig",
     "onCommand:extension.addVsCodeSettings",
+    "onCommand:extension.addVsCodeExtensionRecommendations",
     "onCommand:extension.addStylelintConfig",
     "onCommand:extension.addEditorConfig",
     "onCommand:extension.addKarmaConfig"
@@ -64,6 +65,10 @@
       {
         "command": "extension.addVsCodeSettings",
         "title": "°Centigrade: Create VSCode settings"
+      },
+      {
+        "command": "extension.addVsCodeExtensionRecommendations",
+        "title": "°Centigrade: Create VSCode extension recommendations"
       },
       {
         "command": "extension.addStylelintConfig",
@@ -84,6 +89,9 @@
         },
         {
           "command": "extension.addVsCodeSettings"
+        },
+        {
+          "command": "extension.addVsCodeExtensionRecommendations"
         },
         {
           "command": "extension.addStylelintConfig"
