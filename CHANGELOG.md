@@ -6,8 +6,17 @@ All notable changes to the "centigrade-angular-essentials" extension pack will b
 
 ### Changed
 
-- Removed _Beautify_ extension because HTMl formatting can be handled by VS Code settings now
-- Adjust VS Code settings to wrap HTML attributes (as prior)
+- Removed _Beautify_ extension because HTML and SCSS formatting will be handled by Prettier now
+
+### Added
+
+- Command to add extensions.json to .vscode
+- Angular Console to extension pack
+- Swagger Preview to recommended extensions
+
+### Fixed
+
+- Update npm dependencies (fix GitHub issued vulnerabilities)
 
 ## [0.0.7]
 
