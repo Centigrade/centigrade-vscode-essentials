@@ -6,10 +6,10 @@ This extension not only adds Visual Studio Code extensions that are essential fo
 
 The following essential VS code extensions will be installed. Each of this extensions plays a particular role in our development process.
 
+- [Angular Console](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console): Comfortable UI for the Angular CLI
 - [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template): Intellisense for Angular templates
-- [Angular Schematics](https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics): Angular CLI Schematics integrated into files explorer.
+- [Angular Schematics](https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics): Angular CLI Schematics integrated into files explorer
 - [Auto-Rename-Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag): Rename closing HTML tags when opening HTML tags are renamed
-- [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify): Auto-format HTML
 - [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome): Debugging Angular applications with Chrome
 - [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig): Set default format configurations for any editor
 - [json2ts](https://marketplace.visualstudio.com/items?itemName=GregorBiswanger.json2ts): Paste json into TypeScript classes
@@ -27,7 +27,6 @@ This extension comes with a set of default configurations for the essential exte
 
 Add to project root:
 
-- Beautify (`.jsbeautifyrc`)
 - EditorConfig (`.editorconfig`)
 - Prettier (`.prettierrc`, `.prettierignore`)
 - StyleLint (`.stylelintrc`)
@@ -46,7 +45,7 @@ Install the following dev dependencies:
 
 You can install some of the following Visual Studio Code extensions that we really like and recommend. These are not essential but could be helpful:
 
-- [Angular Snippets](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2): Generic Angular snippets for typical coding patterns.
+- [Angular Snippets](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2): Generic Angular snippets for typical coding patterns
 - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer): Highlight corresponding brackets in the same color
 - [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker): Docker syntax highlighting
 - [GitLab-CI templates generator](https://marketplace.visualstudio.com/items?itemName=jgsqware.gitlab-ci-templates): Templates and syntax highlighting for gitlab configuration files
@@ -56,12 +55,13 @@ You can install some of the following Visual Studio Code extensions that we real
 - [Markdown TOC](https://marketplace.visualstudio.com/items?itemName=AlanWalk.markdown-toc): Table of content for Markdown
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme): Nice icon set for VS Code (doesn't force VS code restart, in contrast to vs-code-icons)
 - [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme): Nice theme with a lot configurations
-- [Night Owl Theme](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl): Nice dark theme that works well with _Dank Mono_ font.
-- [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode): Handy tool to create code snippet shots for presentation purposes.
-- [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager): Switch between projects in VS Code
-- [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight): Highlight TODO and FIXME comments
-- [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare): Live share feature for collaborative code editing.
 - [ngrx for Angular 2 Snippets](https://marketplace.visualstudio.com/items?itemName=ahsanayaz.vscode-ngrx-snippets): NgRx snippets to reduce boiler plate writing
+- [Night Owl Theme](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl): Nice dark theme that works well with _Dank Mono_ font
+- [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode): Handy tool to create code snippet shots for presentation purposes
+- [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager): Switch between projects in VS Code
+- [Swagger Viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer): Swagger Backeend API documentation preview
+- [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight): Highlight TODO and FIXME comments
+- [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare): Live share feature for collaborative code editing
 
 ## FAQ
 

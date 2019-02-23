@@ -2,7 +2,7 @@
   "name": "centigrade-angular-essentials",
   "displayName": "Centigrade Angular Essentials",
   "description": "Essential extensions and configurations for developing Angular applications at Centigrade.",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "publisher": "centigrade",
   "homepage": "https://www.centigrade.de",
   "icon": "assets/images/centigrade.png",
@@ -33,10 +33,10 @@
     "Themes"
   ],
   "extensionDependencies": [
+    "nrwl.angular-console",
     "Angular.ng-template",
     "cyrilletuzi.angular-schematics",
     "formulahendry.auto-rename-tag",
-    "HookyQR.beautify",
     "msjsdiag.debugger-for-chrome",
     "EditorConfig.EditorConfig",
     "GregorBiswanger.json2ts",
@@ -50,26 +50,25 @@
   ],
   "main": "./out/extension",
   "activationEvents": [
-    "onCommand:extension.addBeautifyConfig",
     "onCommand:extension.addPrettierConfig",
     "onCommand:extension.addVsCodeSettings",
+    "onCommand:extension.addVsCodeExtensionRecommendations",
     "onCommand:extension.addStylelintConfig",
     "onCommand:extension.addEditorConfig",
     "onCommand:extension.addKarmaConfig"
   ],
   "contributes": {
-    "commands": [
-      {
-        "command": "extension.addBeautifyConfig",
-        "title": "°Centigrade: Create Beautify config"
-      },
-      {
+    "commands": [{
         "command": "extension.addPrettierConfig",
         "title": "°Centigrade: Create Prettier config (.prettierrc, .prettierignore)"
       },
       {
         "command": "extension.addVsCodeSettings",
         "title": "°Centigrade: Create VSCode settings"
+      },
+      {
+        "command": "extension.addVsCodeExtensionRecommendations",
+        "title": "°Centigrade: Create VSCode extension recommendations"
       },
       {
         "command": "extension.addStylelintConfig",
@@ -85,15 +84,14 @@
       }
     ],
     "menus": {
-      "explorer/context": [
-        {
-          "command": "extension.addBeautifyConfig"
-        },
-        {
+      "explorer/context": [{
           "command": "extension.addPrettierConfig"
         },
         {
           "command": "extension.addVsCodeSettings"
+        },
+        {
+          "command": "extension.addVsCodeExtensionRecommendations"
         },
         {
           "command": "extension.addStylelintConfig"

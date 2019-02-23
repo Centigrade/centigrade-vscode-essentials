@@ -6,20 +6,20 @@ suite('Extension Tests', () => {
   const ExtensionName = 'centigrade.centigrade-angular-essentials';
 
   const ExtensionCommandNames = [
-    'extension.addBeautifyConfig',
     'extension.addPrettierConfig',
     'extension.addVsCodeSettings',
+    'extension.addVsCodeExtensionRecommendations',
     'extension.addStylelintConfig',
     'extension.addEditorConfig',
     'extension.addKarmaConfig',
   ];
 
   test('Tools constants contain proper configuration filenames', () => {
-    assert.deepEqual(fromTools.Beautify.configFileNames, ['.jsbeautifyrc']);
     assert.deepEqual(fromTools.EditorConfig.configFileNames, ['.editorconfig']);
     assert.deepEqual(fromTools.Prettier.configFileNames, ['.prettierrc', '.prettierignore']);
     assert.deepEqual(fromTools.Stylelint.configFileNames, ['.stylelintrc']);
     assert.deepEqual(fromTools.VsCodeSettings.configFileNames, ['settings.json']);
+    assert.deepEqual(fromTools.VsCodeExtensionRecommendations.configFileNames, ['extensions.json']);
     assert.deepEqual(fromTools.KarmaConfig.configFileNames, ['karma.conf.js']);
   });
 

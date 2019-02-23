@@ -94,14 +94,14 @@ function askWhetherFileCanBeCreated(filePath: string): Promise<boolean> {
 // your extension is activated the very first time the command is executed
 export function activate(context: ExtensionContext) {
   const disposableCommands = [
-    commands.registerCommand('extension.addBeautifyConfig', targetUri =>
-      addConfiguration(fromTools.Beautify, targetUri),
-    ),
     commands.registerCommand('extension.addPrettierConfig', targetUri =>
       addConfiguration(fromTools.Prettier, targetUri),
     ),
     commands.registerCommand('extension.addVsCodeSettings', targetUri =>
       addConfiguration(fromTools.VsCodeSettings, targetUri),
+    ),
+    commands.registerCommand('extension.addVsCodeExtensionRecommendations', targetUri =>
+      addConfiguration(fromTools.VsCodeExtensionRecommendations, targetUri),
     ),
     commands.registerCommand('extension.addStylelintConfig', targetUri =>
       addConfiguration(fromTools.Stylelint, targetUri),
