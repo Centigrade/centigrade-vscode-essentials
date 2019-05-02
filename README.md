@@ -62,6 +62,7 @@ You can install some of the following Visual Studio Code extensions that we real
 - [Swagger Viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer): Swagger Backeend API documentation preview
 - [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight): Highlight TODO and FIXME comments
 - [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare): Live share feature for collaborative code editing
+- [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock): Change the coloring of VS code depending of your workspace.
 
 ## FAQ
 
