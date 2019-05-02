@@ -18,7 +18,7 @@ The following essential VS code extensions will be installed. Each of this exten
 - [Sass](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented): Improved syntax highlighting for (S)CSS and SASS
 - [SCSS Intellisense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss): Intellisense for (S)CSS
 - [Stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint): Linting (S)CSS
-- [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint): Lint TypeScript
+- [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin): Lint TypeScript
 - [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens): Inspect and update versions in package.json
 
 ## Default Configurations Snippets

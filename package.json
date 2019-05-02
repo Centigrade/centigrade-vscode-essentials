@@ -45,7 +45,7 @@
     "robinbentley.sass-indented",
     "mrmlnc.vscode-scss",
     "shinnn.stylelint",
-    "eg2.tslint",
+    "ms-vscode.vscode-typescript-tslint-plugin",
     "pflannery.vscode-versionlens"
   ],
   "main": "./out/extension",
