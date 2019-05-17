@@ -36,7 +36,6 @@
     "nrwl.angular-console",
     "Angular.ng-template",
     "cyrilletuzi.angular-schematics",
-    "formulahendry.auto-rename-tag",
     "msjsdiag.debugger-for-chrome",
     "EditorConfig.EditorConfig",
     "GregorBiswanger.json2ts",
@@ -45,7 +44,7 @@
     "robinbentley.sass-indented",
     "mrmlnc.vscode-scss",
     "shinnn.stylelint",
-    "eg2.tslint",
+    "ms-vscode.vscode-typescript-tslint-plugin",
     "pflannery.vscode-versionlens"
   ],
   "main": "./out/extension",
