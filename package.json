@@ -2,7 +2,7 @@
   "name": "centigrade-angular-essentials",
   "displayName": "Centigrade Angular Essentials",
   "description": "Essential extensions and configurations for developing Angular applications at Centigrade.",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "publisher": "centigrade",
   "homepage": "https://www.centigrade.de",
   "icon": "assets/images/centigrade.png",
@@ -33,7 +33,6 @@
     "Themes"
   ],
   "extensionDependencies": [
-    "nrwl.angular-console",
     "Angular.ng-template",
     "cyrilletuzi.angular-schematics",
     "msjsdiag.debugger-for-chrome",
