@@ -2,7 +2,7 @@
 
 All notable changes to the "centigrade-angular-essentials" extension pack will be documented in this file.
 
-## [0.0.9]
+## [0.0.10]
 
 ### Changed
 
