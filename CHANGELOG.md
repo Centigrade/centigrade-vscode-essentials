@@ -10,6 +10,7 @@ All notable changes to the "centigrade-angular-essentials" extension pack will b
 
 ### Fixed
 
+- Replaced SASS extension maintained by _robinbently_ with the new Version that is maintained by [_TheRealSyler_](https://github.com/TheRealSyler/vscode-sass-indented) (syler.sass-indented).
 - Update npm dependencies (fix GitHub issued vulnerabilities)
 
 ## [0.0.8]
