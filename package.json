@@ -2,7 +2,7 @@
   "name": "centigrade-angular-essentials",
   "displayName": "Centigrade Angular Essentials",
   "description": "Essential extensions and configurations for developing Angular applications at Centigrade.",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "publisher": "centigrade",
   "homepage": "https://www.centigrade.de",
   "icon": "assets/images/centigrade.png",
@@ -33,7 +33,6 @@
     "Themes"
   ],
   "extensionDependencies": [
-    "nrwl.angular-console",
     "Angular.ng-template",
     "cyrilletuzi.angular-schematics",
     "msjsdiag.debugger-for-chrome",
@@ -41,7 +40,7 @@
     "GregorBiswanger.json2ts",
     "christian-kohler.path-intellisense",
     "esbenp.prettier-vscode",
-    "robinbentley.sass-indented",
+    "syler.sass-indented",
     "mrmlnc.vscode-scss",
     "shinnn.stylelint",
     "ms-vscode.vscode-typescript-tslint-plugin",
@@ -115,9 +114,9 @@
     "build": "vsce package"
   },
   "devDependencies": {
-    "@types/mocha": "^5.2.6",
+    "@types/mocha": "^5.2.7",
     "@types/node": "^10.12.26",
     "typescript": "^3.3.3",
-    "vscode": "^1.1.33"
+    "vscode": "^1.1.36"
   }
 }

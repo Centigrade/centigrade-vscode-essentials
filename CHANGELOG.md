@@ -2,6 +2,17 @@
 
 All notable changes to the "centigrade-angular-essentials" extension pack will be documented in this file.
 
+## [0.0.10]
+
+### Changed
+
+- Moved _Angular Console_ extension to the recommended section because the extension causes an error and prevents our extension from working properly. People have already submitted the Issue ([ISSUE I](https://github.com/nrwl/angular-console/issues/718) and [ISSUE II](https://github.com/nrwl/angular-console/issues/741)) but apparently the developer cannot reproduce the bugs and closes the issues.
+
+### Fixed
+
+- Replaced SASS extension maintained by _robinbently_ with the new Version that is maintained by [_TheRealSyler_](https://github.com/TheRealSyler/vscode-sass-indented) (syler.sass-indented).
+- Update npm dependencies (fix GitHub issued vulnerabilities)
+
 ## [0.0.8]
 
 ### Changed

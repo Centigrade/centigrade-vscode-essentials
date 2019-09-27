@@ -6,7 +6,6 @@ This extension not only adds Visual Studio Code extensions that are essential fo
 
 The following essential VS code extensions will be installed. Each of this extensions plays a particular role in our development process.
 
-- [Angular Console](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console): Comfortable UI for the Angular CLI
 - [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template): Intellisense for Angular templates
 - [Angular Schematics](https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics): Angular CLI Schematics integrated into files explorer
 - [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome): Debugging Angular applications with Chrome
@@ -14,7 +13,7 @@ The following essential VS code extensions will be installed. Each of this exten
 - [json2ts](https://marketplace.visualstudio.com/items?itemName=GregorBiswanger.json2ts): Paste json into TypeScript classes
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense): Intellisense for TypeScript imports
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Auto-format TypeScript
-- [Sass](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented): Improved syntax highlighting for (S)CSS and SASS
+- [Sass](https://marketplace.visualstudio.com/items?itemName=syler.sass-indented): Improved syntax highlighting for (S)CSS and SASS
 - [SCSS Intellisense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss): Intellisense for (S)CSS
 - [Stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint): Linting (S)CSS
 - [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin): Lint TypeScript
@@ -44,6 +43,7 @@ Install the following dev dependencies:
 
 You can install some of the following Visual Studio Code extensions that we really like and recommend. These are not essential but could be helpful:
 
+- [Angular Console](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console): Comfortable UI for the Angular CLI
 - [Angular Snippets](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2): Generic Angular snippets for typical coding patterns
 - [Rainbow Brackets](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets): Highlight corresponding brackets in the same color
 - [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker): Docker syntax highlighting
