@@ -2,6 +2,14 @@
 
 All notable changes to the "centigrade-angular-essentials" extension pack will be documented in this file.
 
+## [0.0.11]
+
+### Added
+
+- Added 2 more properties to VSCode default settings
+  - Exclude `node_modules` from file tree
+  - Use relative TypeScript imports by default
+
 ## [0.0.10]
 
 ### Changed
