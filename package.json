@@ -105,9 +105,9 @@
     "build": "vsce package"
   },
   "devDependencies": {
-    "@types/mocha": "^5.2.7",
-    "@types/node": "^10.12.26",
-    "typescript": "^3.3.3",
-    "vscode": "^1.1.36"
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^14.14.6",
+    "typescript": "^4.0.5",
+    "vscode": "^1.1.37"
   }
 }
