@@ -8,6 +8,12 @@ All notable changes to the "centigrade-angular-essentials" extension pack will b
 
 - The _StyleLint_ extension has been removed because it is no longer available.
 
+### Added
+
+- Added 2 more properties to VSCode default settings
+  - Exclude `node_modules` from file tree
+  - Use relative TypeScript imports by default
+
 ## [0.0.10]
 
 ### Changed
