@@ -4,7 +4,7 @@ import { commands, ExtensionContext, MessageItem, Uri, window, workspace } from 
 import { Configuration } from './types/configuration';
 import * as fromTools from './types/tools';
 
-'use strict';
+('use strict');
 interface Choice extends MessageItem {
   readonly confirmed: boolean;
 }
@@ -59,17 +59,17 @@ function copyConfigurationFromTemplateToTargetPath(
   const targetFilePath = path.resolve(targetFolderPath, configFileName);
 
   checkWhetherFileCanBeCreated(targetFilePath)
-    .then(creationAllowed => {
+    .then((creationAllowed) => {
       if (creationAllowed) {
         fs.createReadStream(templateFilePath).pipe(fs.createWriteStream(targetFilePath));
       }
     })
-    .catch(error => window.showWarningMessage(error));
+    .catch((error) => window.showWarningMessage(error));
 }
 
 function checkWhetherFileCanBeCreated(filePath: string): Promise<boolean> {
   if (fs.existsSync(filePath)) {
-    return askWhetherFileCanBeCreated(filePath).catch(error => {
+    return askWhetherFileCanBeCreated(filePath).catch((error) => {
       window.showWarningMessage(error);
       return Promise.reject(error);
     });
@@ -86,7 +86,7 @@ function askWhetherFileCanBeCreated(filePath: string): Promise<boolean> {
         YesOption,
         NoOption,
       )
-      .then(choice => choice !== undefined && choice.confirmed),
+      .then((choice) => choice !== undefined && choice.confirmed),
   );
 }
 
@@ -94,22 +94,19 @@ function askWhetherFileCanBeCreated(filePath: string): Promise<boolean> {
 // your extension is activated the very first time the command is executed
 export function activate(context: ExtensionContext) {
   const disposableCommands = [
-    commands.registerCommand('extension.addPrettierConfig', targetUri =>
+    commands.registerCommand('extension.addPrettierConfig', (targetUri) =>
       addConfiguration(fromTools.Prettier, targetUri),
     ),
-    commands.registerCommand('extension.addVsCodeSettings', targetUri =>
+    commands.registerCommand('extension.addVsCodeSettings', (targetUri) =>
       addConfiguration(fromTools.VsCodeSettings, targetUri),
     ),
-    commands.registerCommand('extension.addVsCodeExtensionRecommendations', targetUri =>
+    commands.registerCommand('extension.addVsCodeExtensionRecommendations', (targetUri) =>
       addConfiguration(fromTools.VsCodeExtensionRecommendations, targetUri),
     ),
-    commands.registerCommand('extension.addStylelintConfig', targetUri =>
-      addConfiguration(fromTools.Stylelint, targetUri),
-    ),
-    commands.registerCommand('extension.addEditorConfig', targetUri =>
+    commands.registerCommand('extension.addEditorConfig', (targetUri) =>
       addConfiguration(fromTools.EditorConfig, targetUri),
     ),
-    commands.registerCommand('extension.addKarmaConfig', targetUri =>
+    commands.registerCommand('extension.addKarmaConfig', (targetUri) =>
       addConfiguration(fromTools.KarmaConfig, targetUri),
     ),
   ];

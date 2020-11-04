@@ -1,6 +1,6 @@
 # Centigrade Angular Essentials
 
-This extension not only adds Visual Studio Code extensions that are essential for all [Centigrade](https://www.centigrade.de) colleagues developing Angular applications. It also provides a set of default configurations in order to auto-format your TypeScript, HTML, and (S)CSS code while adhering to common standards like the official [Angular Styleguide](https://angular.io/guide/styleguide) or the [Stylint Standard Configuration](https://github.com/stylelint/stylelint-config-standard).
+This extension not only adds Visual Studio Code extensions that are essential for all [Centigrade](https://www.centigrade.de) colleagues developing Angular applications. It also provides a set of default configurations in order to auto-format your TypeScript, HTML, and (S)CSS code while adhering to common standards like the official [Angular Styleguide](https://angular.io/guide/styleguide).
 
 ## Essential VS Code Extensions
 
@@ -15,7 +15,6 @@ The following essential VS code extensions will be installed. Each of this exten
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Auto-format TypeScript
 - [Sass](https://marketplace.visualstudio.com/items?itemName=syler.sass-indented): Improved syntax highlighting for (S)CSS and SASS
 - [SCSS Intellisense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss): Intellisense for (S)CSS
-- [Stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint): Linting (S)CSS
 - [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin): Lint TypeScript
 - [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens): Inspect and update versions in package.json
 
@@ -27,7 +26,6 @@ Add to project root:
 
 - EditorConfig (`.editorconfig`)
 - Prettier (`.prettierrc`, `.prettierignore`)
-- StyleLint (`.stylelintrc`)
 - Karma (`karma.conf.js`)
 
 Add to sub-folder `.vscode/*`:
@@ -36,7 +34,6 @@ Add to sub-folder `.vscode/*`:
 
 Install the following dev dependencies:
 
-- `npm install --save-dev stylelint-config-standard`
 - `npm install --save-dev karma-spec-reporter`
 
 ## Recommended VS Code Extensions
@@ -63,12 +60,6 @@ You can install some of the following Visual Studio Code extensions that we real
 - [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock): Change the coloring of VS code depending of your workspace.
 
 ## FAQ
-
-### StyleLint Error in VS Code
-
-**Q**: After using StyleLint with default config the following error _stylelint: Could not find "stylelint-config-standard". Do you need a `configBasedir`_ appears. What can I do?
-
-**A**: Run `npm install --save-dev stylelint-config-standard` which installs standard configuration for StyleLint where our StyleLint config is based on.
 
 ### Update Karma dependencies
 

@@ -42,7 +42,6 @@
     "esbenp.prettier-vscode",
     "syler.sass-indented",
     "mrmlnc.vscode-scss",
-    "shinnn.stylelint",
     "ms-vscode.vscode-typescript-tslint-plugin",
     "pflannery.vscode-versionlens"
   ],
@@ -51,7 +50,6 @@
     "onCommand:extension.addPrettierConfig",
     "onCommand:extension.addVsCodeSettings",
     "onCommand:extension.addVsCodeExtensionRecommendations",
-    "onCommand:extension.addStylelintConfig",
     "onCommand:extension.addEditorConfig",
     "onCommand:extension.addKarmaConfig"
   ],
@@ -68,10 +66,6 @@
       {
         "command": "extension.addVsCodeExtensionRecommendations",
         "title": "°Centigrade: Create VSCode extension recommendations"
-      },
-      {
-        "command": "extension.addStylelintConfig",
-        "title": "°Centigrade: Create Stylelint config"
       },
       {
         "command": "extension.addEditorConfig",
@@ -94,9 +88,6 @@
           "command": "extension.addVsCodeExtensionRecommendations"
         },
         {
-          "command": "extension.addStylelintConfig"
-        },
-        {
           "command": "extension.addEditorConfig"
         },
         {
@@ -114,9 +105,9 @@
     "build": "vsce package"
   },
   "devDependencies": {
-    "@types/mocha": "^5.2.7",
-    "@types/node": "^10.12.26",
-    "typescript": "^3.3.3",
-    "vscode": "^1.1.36"
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^14.14.6",
+    "typescript": "^4.0.5",
+    "vscode": "^1.1.37"
   }
 }
