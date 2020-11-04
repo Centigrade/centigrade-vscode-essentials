@@ -9,7 +9,6 @@ suite('Extension Tests', () => {
     'extension.addPrettierConfig',
     'extension.addVsCodeSettings',
     'extension.addVsCodeExtensionRecommendations',
-    'extension.addStylelintConfig',
     'extension.addEditorConfig',
     'extension.addKarmaConfig',
   ];
@@ -17,7 +16,6 @@ suite('Extension Tests', () => {
   test('Tools constants contain proper configuration filenames', () => {
     assert.deepEqual(fromTools.EditorConfig.configFileNames, ['.editorconfig']);
     assert.deepEqual(fromTools.Prettier.configFileNames, ['.prettierrc', '.prettierignore']);
-    assert.deepEqual(fromTools.Stylelint.configFileNames, ['.stylelintrc']);
     assert.deepEqual(fromTools.VsCodeSettings.configFileNames, ['settings.json']);
     assert.deepEqual(fromTools.VsCodeExtensionRecommendations.configFileNames, ['extensions.json']);
     assert.deepEqual(fromTools.KarmaConfig.configFileNames, ['karma.conf.js']);
@@ -27,32 +25,32 @@ suite('Extension Tests', () => {
     assert.ok(vscode.extensions.getExtension(ExtensionName));
   });
 
-  test('Extension should activate', function(done) {
+  test('Extension should activate', function (done) {
     const oneSecondInMilliseconds = 1 * 60 * 1000;
     this.timeout(oneSecondInMilliseconds);
 
     vscode.extensions
       .getExtension(ExtensionName)
       .activate()
-      .then(api => {
+      .then((api) => {
         done();
       });
   });
 
-  test('Extension should register all commands', function(done) {
+  test('Extension should register all commands', function (done) {
     const oneSecondInMilliseconds = 1 * 60 * 1000;
     this.timeout(oneSecondInMilliseconds);
 
     vscode.extensions
       .getExtension(ExtensionName)
       .activate()
-      .then(api => {
+      .then((api) => {
         return vscode.commands.getCommands();
       })
-      .then(commands => {
+      .then((commands) => {
         for (const commandName of ExtensionCommandNames) {
           assert.ok(
-            commands.find(name => name === commandName),
+            commands.find((name) => name === commandName),
             `Command '${commandName}' is not registered.`,
           );
         }

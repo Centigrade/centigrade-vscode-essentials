@@ -2,6 +2,12 @@
 
 All notable changes to the "centigrade-angular-essentials" extension pack will be documented in this file.
 
+## [0.0.11]
+
+### Changed
+
+- The _StyleLint_ extension has been removed because it is no longer available.
+
 ## [0.0.10]
 
 ### Changed
