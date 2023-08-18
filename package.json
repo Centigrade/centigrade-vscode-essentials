@@ -36,13 +36,13 @@
     "Angular.ng-template",
     "cyrilletuzi.angular-schematics",
     "EditorConfig.EditorConfig",
-    "GregorBiswanger.json2ts",
     "christian-kohler.path-intellisense",
     "esbenp.prettier-vscode",
     "syler.sass-indented",
     "mrmlnc.vscode-scss",
     "ms-vscode.vscode-typescript-tslint-plugin",
-    "pflannery.vscode-versionlens"
+    "pflannery.vscode-versionlens",
+    "MS-vsliveshare.vsliveshare"
   ],
   "main": "./out/extension",
   "activationEvents": [

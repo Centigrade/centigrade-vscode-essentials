@@ -8,15 +8,14 @@ The following essential VS code extensions will be installed. Each of this exten
 
 - [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template): Intellisense for Angular templates
 - [Angular Schematics](https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics): Angular CLI Schematics integrated into files explorer
-- [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome): Debugging Angular applications with Chrome
 - [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig): Set default format configurations for any editor
-- [json2ts](https://marketplace.visualstudio.com/items?itemName=GregorBiswanger.json2ts): Paste json into TypeScript classes
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense): Intellisense for TypeScript imports
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Auto-format TypeScript
 - [Sass](https://marketplace.visualstudio.com/items?itemName=syler.sass-indented): Improved syntax highlighting for (S)CSS and SASS
 - [SCSS Intellisense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss): Intellisense for (S)CSS
 - [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin): Lint TypeScript
 - [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens): Inspect and update versions in package.json
+- [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare): Live share feature for collaborative code editing
 
 ## Default Configurations Snippets
 
@@ -46,6 +45,7 @@ You can install some of the following Visual Studio Code extensions that we real
 - [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker): Docker syntax highlighting
 - [GitLab-CI templates generator](https://marketplace.visualstudio.com/items?itemName=jgsqware.gitlab-ci-templates): Templates and syntax highlighting for gitlab configuration files
 - [Goto last edit location](https://marketplace.visualstudio.com/items?itemName=krizzdewizz.goto-last-edit-location): Go to the last edit location (even across files)
+- [json2ts](https://marketplace.visualstudio.com/items?itemName=GregorBiswanger.json2ts): Paste json into TypeScript classes
 - [Mardown Paste](https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image): Handy tool to quickly insert screencaptures into markdown
 - [Markdown TOC](https://marketplace.visualstudio.com/items?itemName=AlanWalk.markdown-toc): Table of content for Markdown
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme): Nice icon set for VS Code (doesn't force VS code restart, in contrast to vs-code-icons)
@@ -56,7 +56,6 @@ You can install some of the following Visual Studio Code extensions that we real
 - [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager): Switch between projects in VS Code
 - [Swagger Viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer): Swagger Backeend API documentation preview
 - [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight): Highlight TODO and FIXME comments
-- [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare): Live share feature for collaborative code editing
 - [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock): Change the coloring of VS code depending of your workspace.
 
 ## FAQ
