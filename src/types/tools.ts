@@ -5,3 +5,4 @@ export const VsCodeSettings = new Configuration('vscode', ['settings.json']);
 export const VsCodeExtensionRecommendations = new Configuration('vscode', ['extensions.json']);
 export const EditorConfig = new Configuration('editorconfig', ['.editorconfig']);
 export const KarmaConfig = new Configuration('karma', ['karma.conf.js']);
+export const TsConfig = new Configuration('tsconfig', ['tsconfig.json']);

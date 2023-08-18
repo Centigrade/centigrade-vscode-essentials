@@ -4,7 +4,6 @@ import { commands, ExtensionContext, MessageItem, Uri, window, workspace } from 
 import { Configuration } from './types/configuration';
 import * as fromTools from './types/tools';
 
-('use strict');
 interface Choice extends MessageItem {
   readonly confirmed: boolean;
 }
@@ -22,9 +21,18 @@ const NoOption: Choice = {
 function addConfiguration(configuration: Configuration, sourceUri: Uri) {
   try {
     let targetUri = sourceUri;
+
     if (targetUri === undefined) {
-      const rootPath = workspace.workspaceFolders[0];
-      targetUri = rootPath.uri;
+      const firstWorkspace = (workspace?.workspaceFolders ?? [])[0];
+      if (!firstWorkspace) {
+        window.showWarningMessage(
+          "Couldn't find target. Please trigger action on a folder / file.",
+        );
+
+        return;
+      }
+
+      targetUri = firstWorkspace.uri;
     }
 
     let targetPath = targetUri.fsPath;
@@ -37,7 +45,11 @@ function addConfiguration(configuration: Configuration, sourceUri: Uri) {
       copyConfigurationFromTemplateToTargetPath(configuration.toolName, configFileName, targetPath);
     }
   } catch (error) {
-    window.showWarningMessage(error);
+    const errorMessage: string = (error as Error).message
+      ? (error as Error).message
+      : (error as string);
+
+    window.showWarningMessage(errorMessage);
   }
 }
 
@@ -108,6 +120,9 @@ export function activate(context: ExtensionContext) {
     ),
     commands.registerCommand('extension.addKarmaConfig', (targetUri) =>
       addConfiguration(fromTools.KarmaConfig, targetUri),
+    ),
+    commands.registerCommand('extension.addTsConfig', (targetUri) =>
+      addConfiguration(fromTools.TsConfig, targetUri),
     ),
   ];
 
