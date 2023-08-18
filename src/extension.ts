@@ -58,14 +58,13 @@ function copyConfigurationFromTemplateToTargetPath(
   configFileName: string,
   targetFolderPath: string,
 ) {
-  const templateFileName = `${configFileName}.tmpl`;
   const templateFilePath = path.resolve(
     __dirname,
     '..',
     'assets',
     'templates',
     toolName,
-    templateFileName,
+    configFileName,
   );
 
   const targetFilePath = path.resolve(targetFolderPath, configFileName);
