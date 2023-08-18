@@ -118,7 +118,7 @@
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "publish": "vsce publish",
-    "compile": "tsc -p ./",
+    "compile": "shx rm -rf out && tsc -p ./",
     "watch": "tsc -watch -p ./",
     "test": "npm run build && node ./out/test/runTest.js",
     "build": "vsce package"
@@ -130,6 +130,7 @@
     "@vscode/test-electron": "^2.3.4",
     "glob": "^10.3.3",
     "mocha": "^10.2.0",
+    "shx": "^0.3.4",
     "typescript": "^5.1.6",
     "vsce": "^2.15.0"
   }

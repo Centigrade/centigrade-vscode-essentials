@@ -9,7 +9,19 @@ import {
 } from '@vscode/test-electron';
 import { TestOptions } from '@vscode/test-electron/out/runTest';
 
-import packageJson = require('../../package.json');
+const extensionDependencies = [
+  'Angular.ng-template',
+  'christian-kohler.path-intellisense',
+  'cyrilletuzi.angular-schematics',
+  'EditorConfig.EditorConfig',
+  'esbenp.prettier-vscode',
+  'mrmlnc.vscode-scss',
+  'ms-vscode.vscode-typescript-tslint-plugin',
+  'dbaeumer.vscode-eslint',
+  'MS-vsliveshare.vsliveshare',
+  'pflannery.vscode-versionlens',
+  'streetsidesoftware.code-spell-checker',
+];
 
 async function main() {
   const extensionDevelopmentPath = path.resolve(__dirname, '../../');
@@ -28,7 +40,7 @@ async function main() {
 
   const vsix = vsixFiles[0];
 
-  const installDependencies = packageJson.extensionDependencies.reduce(
+  const installDependencies = extensionDependencies.reduce(
     (args, dep) => [...args, '--install-extension', dep],
     [] as string[],
   );

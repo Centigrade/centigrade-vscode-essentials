@@ -8,6 +8,10 @@ All notable changes to the "centigrade-vscode-essentials" extension pack will be
 
 - Clean up recommendations
 
+### Fixed
+
+- Add missing assets
+
 ## [1.0.0]
 
 ### Changed

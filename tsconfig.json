@@ -5,7 +5,7 @@
     "outDir": "out",
     "lib": ["es6"],
     "sourceMap": true,
-    "rootDir": ".",
+    "rootDir": "./src",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "esModuleInterop": true,
@@ -16,5 +16,5 @@
     "downlevelIteration": true,
     "resolveJsonModule": true
   },
-  "exclude": ["node_modules", ".vscode-test"]
+  "include": ["src/**/*"]
 }
