@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "publisher": "centigrade",
   "homepage": "https://www.centigrade.de",
-  "icon": "assets/images/centigrade.png",
+  "icon": "assets/images/centigrade.jpg",
   "repository": {
     "type": "git",
     "url": "https://github.com/Centigrade/centigrade-vscode-essentials"
