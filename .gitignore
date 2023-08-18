@@ -1,4 +1,6 @@
+.DS_Store
 node_modules
 *.vsix
-out/
 .vscode-test/
+out/
+tmp
