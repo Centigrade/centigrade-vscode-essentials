@@ -2,7 +2,7 @@
   "name": "centigrade-vscode-essentials",
   "displayName": "Centigrade VSCode Essentials",
   "description": "Essential extensions and configurations for developing applications at Centigrade.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "centigrade",
   "homepage": "https://www.centigrade.de",
   "icon": "assets/images/centigrade.jpg",

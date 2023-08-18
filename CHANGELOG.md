@@ -2,6 +2,12 @@
 
 All notable changes to the "centigrade-vscode-essentials" extension pack will be documented in this file.
 
+## [1.0.2]
+
+### Changed
+
+- Improved template tsconfig.json
+
 ## [1.0.1]
 
 ### Changed
