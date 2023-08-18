@@ -23,7 +23,7 @@
   ],
   "license": "SEE LICENSE IN LICENSE.md",
   "engines": {
-    "vscode": "^1.76.0"
+    "vscode": "^1.81.0"
   },
   "categories": [
     "Extension Packs",
@@ -52,7 +52,6 @@
     "onCommand:extension.addEditorConfig",
     "onCommand:extension.addKarmaConfig",
     "onCommand:extension.addTsConfig"
-
   ],
   "contributes": {
     "commands": [
@@ -129,6 +128,7 @@
     "@vscode/test-electron": "^2.3.4",
     "glob": "^10.3.3",
     "mocha": "^10.2.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vsce": "^2.15.0"
   }
 }
