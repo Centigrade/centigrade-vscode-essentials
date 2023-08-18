@@ -1,6 +1,13 @@
 # Change Log
 
-All notable changes to the "centigrade-angular-essentials" extension pack will be documented in this file.
+All notable changes to the "centigrade-vscode-essentials" extension pack will be documented in this file.
+
+## [1.0.0]
+
+### Changed
+
+- Completely restructure the extension
+- Renamed from `centigrade-angular-essentials` to `centigrade-vscode-essentials`
 
 ## [0.0.11]
 
