@@ -1,14 +1,14 @@
 {
-  "name": "centigrade-angular-essentials",
-  "displayName": "Centigrade Angular Essentials",
-  "description": "Essential extensions and configurations for developing Angular applications at Centigrade.",
-  "version": "0.0.11",
+  "name": "centigrade-vscode-essentials",
+  "displayName": "Centigrade VSCode Essentials",
+  "description": "Essential extensions and configurations for developing applications at Centigrade.",
+  "version": "1.0.0",
   "publisher": "centigrade",
   "homepage": "https://www.centigrade.de",
   "icon": "assets/images/centigrade.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Centigrade/centigrade-angular-essentials"
+    "url": "https://github.com/Centigrade/centigrade-vscode-essentials"
   },
   "galleryBanner": {
     "color": "#0069B4",
@@ -23,7 +23,7 @@
   ],
   "license": "SEE LICENSE IN LICENSE.md",
   "engines": {
-    "vscode": "^1.19.0"
+    "vscode": "^1.76.0"
   },
   "categories": [
     "Extension Packs",
@@ -35,7 +35,6 @@
   "extensionDependencies": [
     "Angular.ng-template",
     "cyrilletuzi.angular-schematics",
-    "msjsdiag.debugger-for-chrome",
     "EditorConfig.EditorConfig",
     "GregorBiswanger.json2ts",
     "christian-kohler.path-intellisense",
@@ -51,33 +50,50 @@
     "onCommand:extension.addVsCodeSettings",
     "onCommand:extension.addVsCodeExtensionRecommendations",
     "onCommand:extension.addEditorConfig",
-    "onCommand:extension.addKarmaConfig"
+    "onCommand:extension.addKarmaConfig",
+    "onCommand:extension.addTsConfig"
+
   ],
   "contributes": {
     "commands": [
       {
         "command": "extension.addPrettierConfig",
-        "title": "°Centigrade: Create Prettier config (.prettierrc, .prettierignore)"
+        "title": "Create Prettier config (.prettierrc, .prettierignore)"
       },
       {
         "command": "extension.addVsCodeSettings",
-        "title": "°Centigrade: Create VSCode settings"
+        "title": "Create VSCode settings"
       },
       {
         "command": "extension.addVsCodeExtensionRecommendations",
-        "title": "°Centigrade: Create VSCode extension recommendations"
+        "title": "Create VSCode extension recommendations"
       },
       {
         "command": "extension.addEditorConfig",
-        "title": "°Centigrade: Create EditorConfig"
+        "title": "Create EditorConfig"
       },
       {
         "command": "extension.addKarmaConfig",
-        "title": "°Centigrade: Create improved Karma config"
+        "title": "Create improved Karma config"
+      },
+      {
+        "command": "extension.addTsConfig",
+        "title": "Create Default TsConfig"
+      }
+    ],
+    "submenus": [
+      {
+        "id": "centigrade.templates",
+        "label": "°Centigrade Templates"
       }
     ],
     "menus": {
       "explorer/context": [
+        {
+          "submenu": "centigrade.templates"
+        }
+      ],
+      "centigrade.templates": [
         {
           "command": "extension.addPrettierConfig"
         },
@@ -92,6 +108,9 @@
         },
         {
           "command": "extension.addKarmaConfig"
+        },
+        {
+          "command": "extension.addTsConfig"
         }
       ]
     }
@@ -100,14 +119,16 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "npm run compile && node ./node_modules/vscode/bin/test",
+    "test": "npm run build && node ./out/test/runTest.js",
     "build": "vsce package"
   },
   "devDependencies": {
-    "@types/mocha": "^8.0.3",
-    "@types/node": "^14.14.6",
-    "typescript": "^4.0.5",
-    "vscode": "^1.1.37"
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.5.0",
+    "@types/vscode": "^1.81.0",
+    "@vscode/test-electron": "^2.3.4",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.6"
   }
 }
