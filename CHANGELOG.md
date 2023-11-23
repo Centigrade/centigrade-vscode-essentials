@@ -2,6 +2,12 @@
 
 All notable changes to the "centigrade-vscode-essentials" extension pack will be documented in this file.
 
+## [1.0.3]
+
+### Changed
+
+- Added Figma Extension ("figma.figma-vscode-extension") to extension's dependencies.
+
 ## [1.0.2]
 
 ### Changed

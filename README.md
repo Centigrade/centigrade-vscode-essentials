@@ -8,6 +8,7 @@ The following essential VS code extensions will be installed. Each of this exten
 
 - [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template): Intellisense for Angular templates
 - [Angular Schematics](https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics): Angular CLI Schematics integrated into files explorer
+- [Figma for VS Code](https://marketplace.visualstudio.com/items?itemName=figma.figma-vscode-extension): Figma for VS Code lets you navigate and inspect design files, collaborate with designers, track changes, and speed up implementation - all without leaving vscode.
 - [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig): Set default format configurations for any editor
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense): Intellisense for TypeScript imports
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Auto-format TypeScript
