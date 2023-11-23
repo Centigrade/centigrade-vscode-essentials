@@ -2,7 +2,7 @@
   "name": "centigrade-vscode-essentials",
   "displayName": "Centigrade VSCode Essentials",
   "description": "Essential extensions and configurations for developing applications at Centigrade.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "centigrade",
   "homepage": "https://www.centigrade.de",
   "icon": "assets/images/centigrade.jpg",
@@ -34,6 +34,7 @@
   ],
   "extensionDependencies": [
     "Angular.ng-template",
+    "figma.figma-vscode-extension",
     "christian-kohler.path-intellisense",
     "cyrilletuzi.angular-schematics",
     "EditorConfig.EditorConfig",
