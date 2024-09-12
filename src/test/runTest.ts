@@ -21,6 +21,7 @@ const extensionDependencies = [
   'MS-vsliveshare.vsliveshare',
   'pflannery.vscode-versionlens',
   'streetsidesoftware.code-spell-checker',
+  'wayou.vscode-todo-highlight',
 ];
 
 async function main() {

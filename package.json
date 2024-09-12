@@ -43,7 +43,8 @@
     "dbaeumer.vscode-eslint",
     "MS-vsliveshare.vsliveshare",
     "pflannery.vscode-versionlens",
-    "streetsidesoftware.code-spell-checker"
+    "streetsidesoftware.code-spell-checker",
+    "wayou.vscode-todo-highlight"
   ],
   "main": "./out/extension",
   "activationEvents": [
