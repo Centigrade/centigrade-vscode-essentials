@@ -7,11 +7,11 @@ suite('Extension Tests', () => {
   const extensionId = 'centigrade.centigrade-vscode-essentials';
 
   const extensionCommandNames = [
-    'extension.addPrettierConfig',
-    'extension.addVsCodeSettings',
-    'extension.addVsCodeExtensionRecommendations',
-    'extension.addEditorConfig',
-    'extension.addKarmaConfig',
+    'centigradeEssentials.addPrettierConfig',
+    'centigradeEssentials.addVsCodeSettings',
+    'centigradeEssentials.addVsCodeExtensionRecommendations',
+    'centigradeEssentials.addEditorConfig',
+    'centigradeEssentials.addKarmaConfig',
   ];
 
   let extension: vscode.Extension<any>;
