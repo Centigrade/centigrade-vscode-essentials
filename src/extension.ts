@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { commands, ExtensionContext, MessageItem, Uri, window, workspace } from 'vscode';
+import { setRecommendedTodoHighlightSettings } from './todo-highlight/set-settings';
 import { Configuration } from './types/configuration';
 import * as fromTools from './types/tools';
 
@@ -123,6 +124,10 @@ export function activate(context: ExtensionContext) {
     ),
     commands.registerCommand('centigradeEssentials.addTsConfig', (targetUri) =>
       addConfiguration(fromTools.TsConfig, targetUri),
+    ),
+    commands.registerCommand(
+      'centigradeEssentials.setTodoHighlightSettings',
+      async (targetUri) => await setRecommendedTodoHighlightSettings(),
     ),
   ];
 

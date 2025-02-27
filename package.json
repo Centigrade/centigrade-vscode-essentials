@@ -71,6 +71,10 @@
       {
         "command": "centigradeEssentials.addTsConfig",
         "title": "Create Default TsConfig"
+      },
+      {
+        "command": "centigradeEssentials.setTodoHighlightSettings",
+        "title": "Set Recommended TodoHighlight Settings"
       }
     ],
     "submenus": [
@@ -105,7 +109,7 @@
           "command": "centigradeEssentials.addTsConfig"
         },
         {
-          "command": "centigradeEssentials.addTodoHighlightSettings"
+          "command": "centigradeEssentials.setTodoHighlightSettings"
         }
       ]
     }
