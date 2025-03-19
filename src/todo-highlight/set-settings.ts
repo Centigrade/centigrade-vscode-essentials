@@ -124,7 +124,7 @@ function applySettingsAndWrite(settings: Settings | null): { error?: string; inf
   );
 
   if (areSomeSettingsAlreadySet) {
-    overwriteSettings(settings, settingsFilePath);
+    addSettings(settings, settingsFilePath);
     return { info: 'Overwrote existing settings with recommended values' };
   }
 
@@ -134,12 +134,6 @@ function applySettingsAndWrite(settings: Settings | null): { error?: string; inf
 
 function createNewSettings(settingsFilePath: string) {
   const settingsJson = JSON.stringify(centigradeRecommendedSettings, null, 2);
-  fs.writeFileSync(settingsFilePath, settingsJson);
-}
-
-function overwriteSettings(settings: Settings, settingsFilePath: string) {
-  const updatedSettings = { ...settings, ...centigradeRecommendedSettings };
-  const settingsJson = JSON.stringify(updatedSettings, null, 2);
   fs.writeFileSync(settingsFilePath, settingsJson);
 }
 
