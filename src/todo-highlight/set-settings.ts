@@ -119,17 +119,15 @@ function applySettingsAndWrite(settings: Settings | null): { error?: string; inf
     return { info: 'Created settings.json with recommended settings' };
   }
 
+  addSettings(settings, settingsFilePath);
+
   const areSomeSettingsAlreadySet = Object.keys(centigradeRecommendedSettings).some((setting) =>
     settings.hasOwnProperty(setting),
   );
 
-  if (areSomeSettingsAlreadySet) {
-    addSettings(settings, settingsFilePath);
-    return { info: 'Overwrote existing settings with recommended values' };
-  }
-
-  addSettings(settings, settingsFilePath);
-  return { info: 'Added recommended settings to existing settings.json' };
+  return areSomeSettingsAlreadySet
+    ? { info: 'Overwrote existing settings with recommended values' }
+    : { info: 'Added recommended settings to existing settings.json' };
 }
 
 function createNewSettings(settingsFilePath: string) {
