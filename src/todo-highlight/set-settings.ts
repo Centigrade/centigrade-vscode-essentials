@@ -1,4 +1,7 @@
-import { window } from 'vscode';
+import * as fs from 'node:fs';
+import path from 'node:path';
+import { window, workspace } from 'vscode';
+import { Settings } from './types';
 
 const centigradeRecommendedSettings = {
   'todohighlight.keywords': [
@@ -51,8 +54,97 @@ const centigradeRecommendedSettings = {
   },
 };
 
+const workspaceUri = workspace.workspaceFolders?.at(0)?.uri;
+const ensureDotVscodeFolder = () => {
+  if (!workspaceUri?.fsPath) {
+    return null;
+  }
+
+  const dotVsCodeFolderPath = path.join(workspaceUri.fsPath, '.vscode');
+
+  if (!fs.existsSync(dotVsCodeFolderPath)) {
+    fs.mkdirSync(dotVsCodeFolderPath);
+  }
+};
+const getSettingsFilePath = () => {
+  return workspaceUri ? path.join(workspaceUri.fsPath, '.vscode/settings.json') : null;
+};
+
 export async function setRecommendedTodoHighlightSettings() {
-  await window.showInputBox({
-    title: 'Hey!',
-  });
+  const settings = tryReadSettings();
+  const { error, info } = applySettingsAndWrite(settings);
+
+  if (info) {
+    await window.showInformationMessage(info);
+  } else if (error) {
+    await window.showErrorMessage(error);
+  }
+}
+
+// -----------------------------------
+// Module internal functions
+// -----------------------------------
+
+function tryReadSettings(): Settings | null {
+  ensureDotVscodeFolder();
+
+  const settingsFilePath = getSettingsFilePath();
+
+  if (!settingsFilePath) {
+    return null;
+  }
+
+  if (fs.existsSync(settingsFilePath)) {
+    try {
+      const settingsFileContents = fs.readFileSync(settingsFilePath).toString('utf-8');
+
+      return JSON.parse(settingsFileContents);
+    } catch {
+      return null;
+    }
+  }
+
+  return null;
+}
+
+function applySettingsAndWrite(settings: Settings | null): { error?: string; info?: string } {
+  const settingsFilePath = getSettingsFilePath();
+
+  if (!settingsFilePath) {
+    return { error: 'Could not create settings. No workspace is opened.' };
+  }
+
+  if (!settings) {
+    createNewSettings(settingsFilePath);
+    return { info: 'Created settings.json with recommended settings' };
+  }
+
+  const areSomeSettingsAlreadySet = Object.keys(centigradeRecommendedSettings).some((setting) =>
+    settings.hasOwnProperty(setting),
+  );
+
+  if (areSomeSettingsAlreadySet) {
+    overwriteSettings(settings, settingsFilePath);
+    return { info: 'Overwrote existing settings with recommended values' };
+  }
+
+  addSettings(settings, settingsFilePath);
+  return { info: 'Added recommended settings to existing settings.json' };
+}
+
+function createNewSettings(settingsFilePath: string) {
+  const settingsJson = JSON.stringify(centigradeRecommendedSettings, null, 2);
+  fs.writeFileSync(settingsFilePath, settingsJson);
+}
+
+function overwriteSettings(settings: Settings, settingsFilePath: string) {
+  const updatedSettings = { ...settings, ...centigradeRecommendedSettings };
+  const settingsJson = JSON.stringify(updatedSettings, null, 2);
+  fs.writeFileSync(settingsFilePath, settingsJson);
+}
+
+function addSettings(settings: Settings, settingsFilePath: string) {
+  const updatedSettings = { ...settings, ...centigradeRecommendedSettings };
+  const settingsJson = JSON.stringify(updatedSettings, null, 2);
+  fs.writeFileSync(settingsFilePath, settingsJson);
 }
