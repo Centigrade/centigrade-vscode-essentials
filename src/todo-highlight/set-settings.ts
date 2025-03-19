@@ -57,7 +57,7 @@ const centigradeRecommendedSettings = {
 const workspaceUri = workspace.workspaceFolders?.at(0)?.uri;
 const ensureDotVscodeFolder = () => {
   if (!workspaceUri?.fsPath) {
-    return null;
+    return;
   }
 
   const dotVsCodeFolderPath = path.join(workspaceUri.fsPath, '.vscode');
