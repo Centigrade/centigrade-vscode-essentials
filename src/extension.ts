@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { commands, ExtensionContext, MessageItem, Uri, window, workspace } from 'vscode';
+import { setRecommendedTodoHighlightSettings } from './todo-highlight/set-settings';
 import { Configuration } from './types/configuration';
 import * as fromTools from './types/tools';
 
@@ -105,23 +106,28 @@ function askWhetherFileCanBeCreated(filePath: string): Promise<boolean> {
 // your extension is activated the very first time the command is executed
 export function activate(context: ExtensionContext) {
   const disposableCommands = [
-    commands.registerCommand('extension.addPrettierConfig', (targetUri) =>
+    commands.registerCommand('centigradeEssentials.addPrettierConfig', (targetUri) =>
       addConfiguration(fromTools.Prettier, targetUri),
     ),
-    commands.registerCommand('extension.addVsCodeSettings', (targetUri) =>
+    commands.registerCommand('centigradeEssentials.addVsCodeSettings', (targetUri) =>
       addConfiguration(fromTools.VsCodeSettings, targetUri),
     ),
-    commands.registerCommand('extension.addVsCodeExtensionRecommendations', (targetUri) =>
-      addConfiguration(fromTools.VsCodeExtensionRecommendations, targetUri),
+    commands.registerCommand(
+      'centigradeEssentials.addVsCodeExtensionRecommendations',
+      (targetUri) => addConfiguration(fromTools.VsCodeExtensionRecommendations, targetUri),
     ),
-    commands.registerCommand('extension.addEditorConfig', (targetUri) =>
+    commands.registerCommand('centigradeEssentials.addEditorConfig', (targetUri) =>
       addConfiguration(fromTools.EditorConfig, targetUri),
     ),
-    commands.registerCommand('extension.addKarmaConfig', (targetUri) =>
+    commands.registerCommand('centigradeEssentials.addKarmaConfig', (targetUri) =>
       addConfiguration(fromTools.KarmaConfig, targetUri),
     ),
-    commands.registerCommand('extension.addTsConfig', (targetUri) =>
+    commands.registerCommand('centigradeEssentials.addTsConfig', (targetUri) =>
       addConfiguration(fromTools.TsConfig, targetUri),
+    ),
+    commands.registerCommand(
+      'centigradeEssentials.setTodoHighlightSettings',
+      async (targetUri) => await setRecommendedTodoHighlightSettings(),
     ),
   ];
 

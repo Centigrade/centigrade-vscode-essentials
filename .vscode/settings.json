@@ -4,8 +4,9 @@
     ".vscode-test": true
   },
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.organizeImports": "explicit"
   },
   "prettier.requireConfig": true,
-  "versionlens.showVersionLensesAtStartup": false
+  "versionlens.showVersionLensesAtStartup": false,
+  "cSpell.words": ["todohighlight"]
 }

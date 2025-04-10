@@ -40,46 +40,42 @@
     "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
     "mrmlnc.vscode-scss",
-    "ms-vscode.vscode-typescript-tslint-plugin",
     "dbaeumer.vscode-eslint",
     "MS-vsliveshare.vsliveshare",
     "pflannery.vscode-versionlens",
-    "streetsidesoftware.code-spell-checker"
+    "streetsidesoftware.code-spell-checker",
+    "wayou.vscode-todo-highlight"
   ],
   "main": "./out/extension",
-  "activationEvents": [
-    "onCommand:extension.addPrettierConfig",
-    "onCommand:extension.addVsCodeSettings",
-    "onCommand:extension.addVsCodeExtensionRecommendations",
-    "onCommand:extension.addEditorConfig",
-    "onCommand:extension.addKarmaConfig",
-    "onCommand:extension.addTsConfig"
-  ],
   "contributes": {
     "commands": [
       {
-        "command": "extension.addPrettierConfig",
+        "command": "centigradeEssentials.addPrettierConfig",
         "title": "Create Prettier config (.prettierrc, .prettierignore)"
       },
       {
-        "command": "extension.addVsCodeSettings",
+        "command": "centigradeEssentials.addVsCodeSettings",
         "title": "Create VSCode settings"
       },
       {
-        "command": "extension.addVsCodeExtensionRecommendations",
+        "command": "centigradeEssentials.addVsCodeExtensionRecommendations",
         "title": "Create VSCode extension recommendations"
       },
       {
-        "command": "extension.addEditorConfig",
+        "command": "centigradeEssentials.addEditorConfig",
         "title": "Create EditorConfig"
       },
       {
-        "command": "extension.addKarmaConfig",
+        "command": "centigradeEssentials.addKarmaConfig",
         "title": "Create improved Karma config"
       },
       {
-        "command": "extension.addTsConfig",
+        "command": "centigradeEssentials.addTsConfig",
         "title": "Create Default TsConfig"
+      },
+      {
+        "command": "centigradeEssentials.setTodoHighlightSettings",
+        "title": "Set Recommended TodoHighlight Settings"
       }
     ],
     "submenus": [
@@ -96,22 +92,25 @@
       ],
       "centigrade.templates": [
         {
-          "command": "extension.addPrettierConfig"
+          "command": "centigradeEssentials.addPrettierConfig"
         },
         {
-          "command": "extension.addVsCodeSettings"
+          "command": "centigradeEssentials.addVsCodeSettings"
         },
         {
-          "command": "extension.addVsCodeExtensionRecommendations"
+          "command": "centigradeEssentials.addVsCodeExtensionRecommendations"
         },
         {
-          "command": "extension.addEditorConfig"
+          "command": "centigradeEssentials.addEditorConfig"
         },
         {
-          "command": "extension.addKarmaConfig"
+          "command": "centigradeEssentials.addKarmaConfig"
         },
         {
-          "command": "extension.addTsConfig"
+          "command": "centigradeEssentials.addTsConfig"
+        },
+        {
+          "command": "centigradeEssentials.setTodoHighlightSettings"
         }
       ]
     }
