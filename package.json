@@ -25,6 +25,7 @@
   "engines": {
     "vscode": "^1.81.0"
   },
+  "activationEvents":[],
   "categories": [
     "Extension Packs",
     "Formatters",
@@ -117,7 +118,7 @@
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
-    "publish": "vsce publish",
+    "publish": "npx vsce publish",
     "compile": "shx rm -rf out && tsc -p ./",
     "watch": "tsc -watch -p ./",
     "test": "npm run build && node ./out/test/runTest.js",
